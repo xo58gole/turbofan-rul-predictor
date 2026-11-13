@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Turbofan RUL Predictor · Zainab Sohail</title>
+<meta name="description" content="Predicting remaining useful life of NASA C-MAPSS turbofan engines with gradient boosting, MLflow, FastAPI and local-LLM explanations.">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.2/plotly.min.js"></script>
+<script src="data.js"></script>
+<style>
+:root {
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink2: #52514e; --grid: #e1e0d9;
+  --blue: #2a78d6; --orange: #eb6834; --aqua: #1baf7a; --yellow: #eda100; --red: #e34948;
+  --neutral: #c3c2b7; --border: #e1e0d9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink2: #c3c2b7; --grid: #2c2c2a;
+    --blue: #3987e5; --orange: #d95926; --aqua: #199e70; --yellow: #c98500; --neutral: #52514e;
+    --border: #2c2c2a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--page); color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5; -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  max-width: 1080px; margin: 0 auto;
+  padding: 40px max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left));
+}
+.eyebrow { color: var(--ink2); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; margin: 0 0 8px; }
+h1 { font-size: clamp(28px, 4vw, 40px); line-height: 1.15; margin: 0 0 12px; }
+.lead { font-size: 18px; max-width: 760px; margin: 0 0 12px; }
+.byline { color: var(--ink2); font-size: 14px; margin: 0 0 16px; }
+.byline a, footer a { color: var(--blue); text-decoration: none; }
+.byline a:hover, footer a:hover { text-decoration: underline; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 28px; padding: 0; list-style: none; }
+.chips li { font-size: 12px; padding: 3px 10px; border: 1px solid var(--border); border-radius: 999px; color: var(--ink2); background: var(--surface); }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 18px 12px; }
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+.kpi .label { color: var(--ink2); font-size: 13px; margin: 0; }
+.kpi .value { font-size: 30px; font-weight: 650; margin: 2px 0; font-variant-numeric: tabular-nums; }
+.kpi .value span { font-size: 15px; font-weight: 500; color: var(--ink2); margin-left: 4px; }
+.kpi .cmp { font-size: 13px; color: var(--ink2); margin: 0 0 6px; }
+h2 { font-size: 17px; margin: 0 0 2px; }
+.takeaway { color: var(--ink2); font-size: 14px; margin: 0 0 8px; }
+.chart { width: 100%; height: 380px; }
+.chart.tall { height: 440px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+section { margin-top: 16px; }
+.explain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.bar-row { display: grid; grid-template-columns: 170px 1fr 64px; gap: 8px; align-items: center; font-size: 14px; margin: 6px 0; }
+.bar-track { background: var(--grid); border-radius: 4px; height: 10px; overflow: hidden; }
+.bar-fill { background: var(--blue); height: 100%; }
+.bar-row .num { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink2); }
+.note { border-left: 3px solid var(--blue); padding: 4px 0 4px 14px; margin: 0; font-size: 15px; }
+.small { font-size: 13px; color: var(--ink2); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+th, td { text-align: right; padding: 7px 10px; border-bottom: 1px solid var(--border); }
+th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+th { color: var(--ink2); font-weight: 600; }
+tr.focus td { background: color-mix(in srgb, var(--blue) 12%, transparent); font-weight: 600; }
+.table-scroll { overflow-x: auto; }
+.pipeline { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; counter-reset: step; }
+.pipeline .step { background: var(--page); border: 1px solid var(--border); border-radius: 10px; padding: 12px; position: relative; }
+.pipeline .step b { display: block; font-size: 14px; margin-bottom: 4px; }
+.pipeline .step b::before { counter-increment: step; content: counter(step) ". "; color: var(--blue); }
+.pipeline .step p { margin: 0; font-size: 13px; color: var(--ink2); }
+footer { margin-top: 28px; font-size: 13px; color: var(--ink2); }
+footer dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 10px 0; }
+footer dt { font-weight: 600; color: var(--ink); }
+footer dd { margin: 0; }
+@media (max-width: 760px) {
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+  .grid2, .explain-grid { grid-template-columns: 1fr; }
+  .pipeline { grid-template-columns: 1fr; }
+  .kpi .value { font-size: 26px; }
+  .chart, .chart.tall { height: 330px; }
+  .bar-row { grid-template-columns: 130px 1fr 54px; font-size: 13px; }
+  .lead { font-size: 16px; }
+  table { font-size: 12px; }
+  th, td { padding: 6px 6px; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <p class="eyebrow">Portfolio project 03 · Predictive maintenance</p>
+    <h1>Turbofan RUL Predictor</h1>
+    <p class="lead" id="lead"></p>
+    <p class="byline">Zainab Sohail · <a href="https://github.com/xo58gole/turbofan-rul-predictor">Code on GitHub</a> · <a href="https://xo58gole.github.io/">Portfolio</a></p>
+    <ul class="chips">
+      <li>Time-series features</li><li>Gradient boosting</li><li>Grouped cross-validation</li>
+      <li>MLflow</li><li>FastAPI</li><li>Explainable AI</li><li>Ollama (local LLM)</li>
+      <li>pytest</li><li>Docker</li>
+    </ul>
+  </header>
+
+  <div class="kpis" id="kpis"></div>
+
+  <section class="card">
+    <h2>Predicted vs true remaining life, 100 unseen test engines</h2>
+    <p class="takeaway" id="t-scatter"></p>
+    <div id="c-scatter" class="chart tall"></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>Test error by model</h2>
+      <p class="takeaway" id="t-models"></p>
+      <div id="c-models" class="chart"></div>
+    </section>
+    <section class="card">
+      <h2 id="h-traj">One engine, cycle by cycle</h2>
+      <p class="takeaway" id="t-traj"></p>
+      <div id="c-traj" class="chart"></div>
+    </section>
+    <section class="card">
+      <h2>Which sensors move predictions most</h2>
+      <p class="takeaway" id="t-imp"></p>
+      <div id="c-imp" class="chart"></div>
+    </section>
+    <section class="card">
+      <h2>Risk level: predicted vs actual</h2>
+      <p class="takeaway" id="t-risk"></p>
+      <div id="c-risk" class="chart"></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2 id="h-explain">Explain this prediction</h2>
+    <p class="takeaway">What <code>POST /explain</code> returns: each sensor's impact in cycles (its readings swapped for a healthy engine's, then re-predicted), plus a note for the maintenance manager. With Ollama running, a local LLM writes the note; without it, the template below is used.</p>
+    <div class="explain-grid">
+      <div id="explain-bars"></div>
+      <div>
+        <p class="note" id="explain-note"></p>
+        <p class="small" id="explain-meta"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>All models compared</h2>
+    <p class="takeaway">Selected on cross-validation RMSE (5 folds, grouped by engine). Test numbers were logged for every run but never used to choose.</p>
+    <div class="table-scroll"><table id="tbl"></table></div>
+  </section>
+
+  <section class="card">
+    <h2>How it's built</h2>
+    <p class="takeaway">Everything runs locally with one command. No paid APIs.</p>
+    <div class="pipeline">
+      <div class="step"><b>Load</b><p>NASA C-MAPSS FD001: 100 run-to-failure engines, 21 sensors, checksum-verified download.</p></div>
+      <div class="step"><b>Features</b><p id="p-features"></p></div>
+      <div class="step"><b>Model</b><p>Linear baseline vs a gradient boosting grid, GroupKFold by engine, every run tracked in MLflow.</p></div>
+      <div class="step"><b>Explain</b><p>Per-sensor what-if impacts in cycles, written up by a local LLM via Ollama with a template fallback.</p></div>
+      <div class="step"><b>Serve</b><p>FastAPI: /predict, /explain, /model/info. Pytest suite, Docker image, ready for the maintenance copilot.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <dl>
+      <dt>Data</dt><dd>A. Saxena and K. Goebel (2008). Turbofan Engine Degradation Simulation Data Set, NASA Prognostics Data Repository, NASA Ames Research Center. Subset FD001 (one operating condition, one fault mode).</dd>
+      <dt>RUL</dt><dd>Remaining useful life: operating cycles left before failure. Training labels capped at <span id="d-cap"></span> cycles.</dd>
+      <dt>RMSE</dt><dd>Root mean squared error of predicted RUL at each test engine's last recorded cycle, in cycles.</dd>
+      <dt>NASA score</dt><dd>PHM08 scoring function summed over the 100 test engines. Lower is better; late predictions cost more than early ones.</dd>
+      <dt>Risk</dt><dd id="d-risk"></dd>
+    </dl>
+    <p>Built by Zainab Sohail · MSc Artificial Intelligence, FAU Erlangen-Nürnberg · <a href="https://xo58gole.github.io/">xo58gole.github.io</a> · Data built <span id="d-built"></span></p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  const D = window.RUL_DATA;
+  const $ = (id) => document.getElementById(id);
+  const fmt = (v, d = 1) => Number(v).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+  const int = (v) => Math.round(v).toLocaleString("en-US");
+
+  // ---- numbers derived from data.js ---------------------------------------
+  const E = D.engines;
+  const n = E.unit.length;
+  const final = D.final;
+  const base = D.models.find((m) => m.run === "linear_current_sensors");
+  const floor = D.models.find((m) => m.run === "mean_only");
+  const gbms = D.models.filter((m) => m.family === "gradient_boosting");
+  const rmseGain = 100 * (1 - final.test_rmse / base.testRmse);
+  const nasaGain = 100 * (1 - final.test_nasa_score / base.nasa);
+  const within = (arr, tol) => arr.filter((v) => Math.abs(v) <= tol).length;
+  const err = E.error;
+  const baseErr = E.baseline_rul.map((b, i) => b - E.true_rul[i]);
+  const w15 = within(err, 15), w15b = within(baseErr, 15);
+  const RM = D.riskMatrix.counts; // rows = true high/medium/low, cols = predicted high/medium/low
+  const trueHigh = RM[0][0] + RM[0][1] + RM[0][2];
+  const caughtHigh = RM[0][0];
+  const missedAsLow = RM[0][2];
+  const late = err.filter((v) => v > 0).length;
+
+  $("lead").textContent =
+    `On ${n} test engines the model never saw, gradient boosting on rolling sensor features predicts remaining life with an RMSE of ${fmt(final.test_rmse)} cycles, ` +
+    `${fmt(rmseGain, 0)}% lower than a linear baseline. It flags ${caughtHigh} of the ${trueHigh} engines within ${D.meta.riskHigh} cycles of failure as high risk, and calls none of them low risk.`;
+
+  const kpis = [
+    { label: "Test RMSE", value: fmt(final.test_rmse), unit: "cycles", cmp: `Linear baseline ${fmt(base.testRmse)} · mean-only ${fmt(floor.testRmse)}` },
+    { label: "NASA score", value: int(final.test_nasa_score), unit: "", cmp: `Baseline ${int(base.nasa)} (${fmt(nasaGain, 0)}% lower)` },
+    { label: "Near-failure engines flagged high", value: `${caughtHigh}/${trueHigh}`, unit: "", cmp: `${RM[0][1]} flagged medium, ${missedAsLow} flagged low` },
+    { label: "Engines within ±15 cycles", value: `${w15}`, unit: `of ${n}`, cmp: `Linear baseline ${w15b} of ${n}` },
+  ];
+  $("kpis").innerHTML = kpis.map((k) =>
+    `<div class="card kpi"><p class="label">${k.label}</p><p class="value">${k.value}<span>${k.unit}</span></p><p class="cmp">${k.cmp}</p></div>`).join("");
+
+  $("t-scatter").textContent =
+    `Dots on the diagonal are perfect calls. Gradient boosting (blue) sits tighter around it than the linear baseline (grey): ${w15} vs ${w15b} engines within ±15 cycles. ` +
+    `Predictions flatten near ${D.meta.rulCap} because training labels are capped there.`;
+  const bestCv = Math.min(...gbms.map((m) => m.cvRmse));
+  const gbmTest = gbms.map((m) => m.testRmse);
+  $("t-models").textContent =
+    `Rolling features plus gradient boosting cut test RMSE from ${fmt(base.testRmse)} to ${fmt(final.test_rmse)} cycles. ` +
+    `All 8 boosting settings land between ${fmt(Math.min(...gbmTest))} and ${fmt(Math.max(...gbmTest))}, so the features matter more than the tuning.`;
+
+  const T = D.trajectory;
+  const lastP = T.predicted[T.predicted.length - 1], lastT = T.true[T.true.length - 1];
+  $("h-traj").textContent = `Engine ${T.engine}, cycle by cycle`;
+  $("t-traj").textContent =
+    `What the model would have said at every cycle of test engine ${T.engine}. The dashed line is the true remaining life capped at ${D.meta.rulCap}, the same way the training labels are. The model follows the decline once wear shows; at the last recorded cycle it predicts ${fmt(lastP)} vs ${fmt(lastT, 0)} true.`;
+
+  const imp = D.importance;
+  const sensorsOnly = imp.sensor.map((s, i) => ({ s, l: imp.label[i] })).filter((o) => o.s !== "cycle");
+  const ageFirst = imp.sensor[0] === "cycle";
+  $("t-imp").textContent =
+    `Average size of each sensor's impact across the ${n} test engines. ${ageFirst ? "After operating age, the" : "The"} ` +
+    `${sensorsOnly[0].l} (${sensorsOnly[0].s}) and ${sensorsOnly[1].l} (${sensorsOnly[1].s}) move predictions most.`;
+
+  const tooCautious = RM[1][0] + RM[2][0] + RM[2][1];
+  const tooSafe = RM[0][1] + RM[0][2] + RM[1][2];
+  const twoOff = RM[0][2] + RM[2][0];
+  const diag = RM[0][0] + RM[1][1] + RM[2][2];
+  $("t-risk").textContent =
+    `${diag} of ${n} engines get the right level. ${tooSafe} are rated too safe and ${tooCautious} too cautious; ` +
+    (twoOff === 0 ? "no engine is off by two levels." : `${twoOff} are off by two levels.`);
+  $("p-features").textContent =
+    `${D.meta.sensorsDropped.length} flat sensors dropped. For the other ${D.meta.sensorsUsed.length}: current value, 10- and 30-cycle means, 10-cycle spread and slope. ${D.meta.nFeatures} features.`;
+  $("d-cap").textContent = D.meta.rulCap;
+  $("d-risk").textContent = `High: predicted RUL ≤ ${D.meta.riskHigh} cycles. Medium: ≤ ${D.meta.riskMedium}. Low: above ${D.meta.riskMedium}.`;
+  $("d-built").textContent = D.built;
+
+  // ---- explanation example ------------------------------------------------
+  const X = D.example;
+  $("h-explain").textContent = `Explain this prediction: test engine ${X.engine}`;
+  const maxImp = Math.max(...X.factors.map((f) => Math.abs(f.impact)));
+  $("explain-bars").innerHTML =
+    `<p class="small" style="margin:0 0 6px">Cycles of life each sensor's state costs vs a healthy engine</p>` +
+    X.factors.map((f) => `<div class="bar-row"><span>${f.label}</span><div class="bar-track"><div class="bar-fill" style="width:${(100 * Math.abs(f.impact) / maxImp).toFixed(1)}%"></div></div><span class="num">${fmt(f.impact)}</span></div>`).join("");
+  $("explain-note").textContent = X.note;
+  $("explain-meta").textContent = `Predicted ${fmt(X.predicted)} cycles (${X.risk} risk); true remaining life ${fmt(X.true, 0)} cycles. Note source: template.`;
+
+  // ---- table ----------------------------------------------------------------
+  const nice = (run) => {
+    if (run === "mean_only") return "Mean only (floor)";
+    if (run === "linear_current_sensors") return "Linear, current sensors (baseline)";
+    const m = run.match(/gbm_lr([\d.]+)_leaves(\d+)_minleaf(\d+)/);
+    return `Boosting lr ${m[1]} · ${m[2]} leaves · min ${m[3]}`;
+  };
+  const famLabel = { floor: "Floor", baseline: "Baseline", gradient_boosting: "Gradient boosting" };
+  $("tbl").innerHTML =
+    `<thead><tr><th>Model</th><th>Type</th><th>CV RMSE</th><th>Test RMSE</th><th>NASA score</th></tr></thead><tbody>` +
+    D.models.map((m) => `<tr class="${m.run === D.meta.selectedModel ? "focus" : ""}"><td>${nice(m.run)}${m.run === D.meta.selectedModel ? " (selected)" : ""}</td><td>${famLabel[m.family]}</td><td>${fmt(m.cvRmse, 2)}</td><td>${fmt(m.testRmse, 2)}</td><td>${int(m.nasa)}</td></tr>`).join("") +
+    `</tbody>`;
+
+  // ---- charts -------------------------------------------------------------------
+  const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  const narrow = () => window.innerWidth < 760;
+  const cfg = { displayModeBar: false, responsive: true };
+
+  function layout(extra) {
+    const ink2 = css("--ink2"), grid = css("--grid");
+    const axis = { gridcolor: grid, zerolinecolor: grid, linecolor: grid, tickfont: { color: ink2, size: 12 }, title: { font: { color: ink2, size: 12 } }, fixedrange: true };
+    const base = {
+      paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)",
+      font: { family: "system-ui, -apple-system, Segoe UI, Roboto, sans-serif", color: css("--ink"), size: 12 },
+      margin: { l: 56, r: 16, t: 34, b: 48 },
+      hoverlabel: { bgcolor: css("--surface"), bordercolor: grid, font: { color: css("--ink") } },
+      legend: { orientation: "h", x: 0, y: 1.01, yanchor: "bottom", font: { color: ink2 } },
+      xaxis: { ...axis }, yaxis: { ...axis },
+    };
+    const out = { ...base, ...extra };
+    out.xaxis = { ...axis, ...(extra.xaxis || {}) };
+    out.yaxis = { ...axis, ...(extra.yaxis || {}) };
+    out.xaxis.title = { font: { color: ink2, size: 12 }, ...(extra.xaxis && extra.xaxis.title || {}) };
+    out.yaxis.title = { font: { color: ink2, size: 12 }, ...(extra.yaxis && extra.yaxis.title || {}) };
+    return out;
+  }
+
+  function draw() {
+    const blue = css("--blue"), neutral = css("--neutral"), ink2 = css("--ink2"), red = css("--red"), yellow = css("--yellow");
+    const nw = narrow();
+
+    // Main: predicted vs true
+    const maxV = Math.max(...E.true_rul) + 5;
+    const hover = (pred) => E.unit.map((u, i) => `Engine ${u}<br>True ${fmt(E.true_rul[i], 0)} · predicted ${fmt(pred[i])}<br>Seen for ${E.cycles_observed[i]} cycles`);
+    Plotly.react("c-scatter", [
+      { x: [0, maxV], y: [0, maxV], mode: "lines", line: { color: ink2, dash: "dot", width: 1 }, hoverinfo: "skip", showlegend: false },
+      { x: E.true_rul, y: E.baseline_rul, mode: "markers", name: "Linear baseline", marker: { color: neutral, size: 7 }, text: hover(E.baseline_rul), hovertemplate: "%{text}<extra>Linear baseline</extra>" },
+      { x: E.true_rul, y: E.predicted_rul, mode: "markers", name: "Gradient boosting", marker: { color: blue, size: 8 }, text: hover(E.predicted_rul), hovertemplate: "%{text}<extra>Gradient boosting</extra>" },
+    ], layout({
+      xaxis: { title: { text: nw ? "True RUL (cycles)" : "True remaining useful life (cycles)" }, range: [0, maxV] },
+      yaxis: { title: { text: nw ? "Predicted (cycles)" : "Predicted remaining useful life (cycles)" }, range: [0, maxV] },
+      annotations: nw ? [] : [{ x: maxV - 8, y: maxV - 2, text: "perfect prediction", showarrow: false, font: { color: ink2, size: 11 }, xanchor: "right" }],
+    }), cfg);
+
+    // Model comparison
+    const ms = [...D.models].sort((a, b) => b.testRmse - a.testRmse);
+    Plotly.react("c-models", [{
+      type: "bar", orientation: "h",
+      x: ms.map((m) => m.testRmse), y: ms.map((m) => nw ? nice(m.run).replace("Boosting ", "GB ").replace(" (baseline)", "").replace(" (floor)", "") : nice(m.run)),
+      marker: { color: ms.map((m) => m.run === D.meta.selectedModel ? blue : neutral) },
+      text: ms.map((m) => fmt(m.testRmse)), textposition: "outside", cliponaxis: false, textfont: { color: ink2 },
+      customdata: ms.map((m) => [fmt(m.cvRmse, 2), int(m.nasa)]),
+      hovertemplate: "%{y}<br>Test RMSE %{x:.2f} cycles<br>CV RMSE %{customdata[0]}<br>NASA score %{customdata[1]}<extra></extra>",
+    }], layout({
+      margin: { l: nw ? 150 : 230, r: 40, t: 6, b: 44 },
+      xaxis: { title: { text: "Test RMSE (cycles)" }, range: [0, Math.max(...ms.map((m) => m.testRmse)) * 1.15] },
+      yaxis: { automargin: false, tickfont: { size: nw ? 10 : 11, color: ink2 } },
+      showlegend: false,
+    }), cfg);
+
+    // Trajectory
+    const cap = D.meta.rulCap;
+    const yMax = cap + 15;
+    const trueCapped = T.true.map((v) => Math.min(v, cap));
+    const band = (y0, y1, color) => ({ type: "rect", xref: "paper", x0: 0, x1: 1, y0, y1, fillcolor: color, opacity: 0.12, line: { width: 0 }, layer: "below" });
+    Plotly.react("c-traj", [
+      { x: T.cycle, y: trueCapped, customdata: T.true, mode: "lines", name: nw ? "True (capped)" : `True RUL, capped at ${cap}`, line: { color: ink2, dash: "dash", width: 1.5 }, hovertemplate: "Cycle %{x}<br>True %{customdata:.0f} (capped %{y:.0f})<extra></extra>" },
+      { x: T.cycle, y: T.predicted, mode: "lines", name: "Predicted", line: { color: blue, width: 2 }, hovertemplate: "Cycle %{x}<br>Predicted %{y:.1f}<extra></extra>" },
+    ], layout({
+      xaxis: { title: { text: "Operating cycle" }, range: [0, Math.max(...T.cycle) + 2] },
+      yaxis: { title: { text: nw ? "RUL (cycles)" : "Remaining useful life (cycles)" }, range: [0, yMax] },
+      shapes: [band(0, D.meta.riskHigh, red), band(D.meta.riskHigh, D.meta.riskMedium, yellow)],
+      annotations: nw ? [] : [
+        { xref: "paper", x: 0.01, y: D.meta.riskHigh / 2, text: "high risk", showarrow: false, xanchor: "left", font: { color: ink2, size: 11 } },
+        { xref: "paper", x: 0.01, y: (D.meta.riskHigh + D.meta.riskMedium) / 2, text: "medium risk", showarrow: false, xanchor: "left", font: { color: ink2, size: 11 } },
+      ],
+    }), cfg);
+
+    // Importance
+    const k = 10;
+    const il = imp.label.slice(0, k).reverse(), ic = imp.cycles.slice(0, k).reverse(), is = imp.sensor.slice(0, k).reverse();
+    Plotly.react("c-imp", [{
+      type: "bar", orientation: "h", x: ic,
+      y: il.map((l, i) => is[i] === "cycle" ? (nw ? "age (cycles)" : "operating age") : (nw ? is[i] : `${l} (${is[i]})`)),
+      marker: { color: ic.map((_, i) => i >= k - 3 ? blue : neutral) },
+      text: ic.map((v) => fmt(v)), textposition: "outside", cliponaxis: false, textfont: { color: ink2 },
+      customdata: il, hovertemplate: "%{customdata}<br>Average impact %{x:.2f} cycles<extra></extra>",
+    }], layout({
+      margin: { l: nw ? 90 : 230, r: 40, t: 6, b: 44 },
+      xaxis: { title: { text: "Average impact on predicted RUL (cycles)" }, range: [0, Math.max(...ic) * 1.18] },
+      yaxis: { tickfont: { size: 11, color: ink2 } }, showlegend: false,
+    }), cfg);
+
+    // Risk matrix
+    const lab = ["High", "Medium", "Low"];
+    Plotly.react("c-risk", [{
+      type: "heatmap", z: RM, x: lab, y: lab, colorscale: [[0, css("--surface")], [1, blue]], showscale: false, xgap: 3, ygap: 3,
+      hovertemplate: "Actual %{y}, predicted %{x}<br>%{z} engines<extra></extra>",
+    }], layout({
+      margin: { l: 70, r: 16, t: 6, b: 48 },
+      xaxis: { title: { text: "Predicted risk" }, side: "bottom", showgrid: false },
+      yaxis: { title: { text: "Actual risk" }, autorange: "reversed", showgrid: false },
+      annotations: RM.flatMap((row, i) => row.map((v, j) => ({ x: lab[j], y: lab[i], text: String(v), showarrow: false, font: { size: 16, color: v > 25 ? "#ffffff" : css("--ink") } }))),
+    }), cfg);
+  }
+
+  draw();
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
+  let t; window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(draw, 150); });
+})();
+</script>
+</body>
+</html>

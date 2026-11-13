@@ -1,0 +1,1501 @@
+unit,feature,description,impact_cycles,current_value,healthy_value,trend_per_cycle
+1,cycle,operating age (cycles run),-3.3,31.0,64.0,
+1,s8,physical fan speed,2.9,2388.08,2388.06,0.00612
+1,s3,HPC outlet temperature,2.0,1581.22,1587.43,-0.14206
+1,s13,corrected fan speed,1.7,2388.06,2388.06,0.00079
+1,s2,LPC outlet temperature,1.1,642.58,642.41,0.01606
+1,s9,physical core speed,-0.6,9056.4,9058.2,0.60109
+1,s15,bypass ratio,0.6,8.4024,8.4201,-0.00134
+1,s7,HPC outlet pressure,-0.5,554.42,553.9,0.03442
+1,s14,corrected core speed,0.5,8130.11,8139.37,0.4043
+1,s17,bleed enthalpy,-0.4,393.0,392.0,-0.07273
+1,s11,HPC outlet static pressure,-0.3,47.23,47.37,0.00545
+1,s4,LPT outlet temperature,-0.2,1398.91,1403.23,-0.12103
+1,s20,HPT coolant bleed,0.2,38.81,38.92,-0.00685
+1,s21,LPT coolant bleed,0.1,23.3552,23.3511,0.00121
+1,s12,fuel flow to static pressure ratio,0.0,521.79,521.87,0.01297
+2,s4,LPT outlet temperature,-5.7,1410.83,1403.23,0.15703
+2,cycle,operating age (cycles run),-5.3,49.0,64.0,
+2,s13,corrected fan speed,-3.0,2388.09,2388.06,-0.00321
+2,s9,physical core speed,-1.5,9044.77,9058.2,-0.03885
+2,s20,HPT coolant bleed,-1.5,38.81,38.92,0.01473
+2,s8,physical fan speed,-1.2,2388.1,2388.06,-0.00012
+2,s14,corrected core speed,-1.0,8126.9,8139.37,0.06836
+2,s7,HPC outlet pressure,-0.6,553.52,553.9,0.01164
+2,s11,HPC outlet static pressure,-0.4,47.67,47.37,0.00915
+2,s3,HPC outlet temperature,0.3,1586.59,1587.43,-0.51091
+2,s12,fuel flow to static pressure ratio,0.3,521.74,521.87,0.00545
+2,s21,LPT coolant bleed,0.3,23.2618,23.3511,-0.00685
+2,s15,bypass ratio,0.2,8.4505,8.4201,0.00013
+2,s2,LPC outlet temperature,0.1,642.55,642.41,-0.00945
+2,s17,bleed enthalpy,-0.1,391.0,392.0,-0.14545
+3,cycle,operating age (cycles run),20.1,126.0,64.0,
+3,s2,LPC outlet temperature,16.5,642.88,642.41,0.03467
+3,s3,HPC outlet temperature,12.7,1589.75,1587.43,-0.4837
+3,s15,bypass ratio,5.1,8.4119,8.4201,-0.00252
+3,s4,LPT outlet temperature,4.9,1418.89,1403.23,-0.09285
+3,s17,bleed enthalpy,4.9,395.0,392.0,0.06667
+3,s7,HPC outlet pressure,4.8,552.59,553.9,-0.03424
+3,s11,HPC outlet static pressure,3.8,47.88,47.37,0.00055
+3,s8,physical fan speed,2.8,2388.16,2388.06,0.00218
+3,s12,fuel flow to static pressure ratio,2.7,520.83,521.87,-0.03109
+3,s20,HPT coolant bleed,-2.0,38.93,38.92,-0.01606
+3,s9,physical core speed,-1.8,9049.26,9058.2,-0.54352
+3,s13,corrected fan speed,-1.1,2388.14,2388.06,0.00358
+3,s14,corrected core speed,1.0,8131.46,8139.37,0.14455
+3,s21,LPT coolant bleed,0.8,23.274,23.3511,0.00256
+4,cycle,operating age (cycles run),25.7,106.0,64.0,
+4,s4,LPT outlet temperature,-19.3,1406.88,1403.23,-0.45467
+4,s7,HPC outlet pressure,3.7,552.64,553.9,0.00024
+4,s11,HPC outlet static pressure,2.4,47.65,47.37,0.00448
+4,s14,corrected core speed,-2.2,8133.64,8139.37,0.21994
+4,s13,corrected fan speed,2.0,2388.11,2388.06,-0.00042
+4,s2,LPC outlet temperature,1.9,642.78,642.41,-0.008
+4,s15,bypass ratio,1.7,8.4634,8.4201,0.002
+4,s9,physical core speed,-1.2,9051.3,9058.2,0.05224
+4,s21,LPT coolant bleed,1.0,23.2581,23.3511,-0.00416
+4,s12,fuel flow to static pressure ratio,-0.8,521.88,521.87,0.02958
+4,s8,physical fan speed,-0.7,2388.13,2388.06,-0.00267
+4,s20,HPT coolant bleed,-0.6,38.58,38.92,-0.02152
+4,s3,HPC outlet temperature,-0.3,1594.53,1587.43,0.38715
+4,s17,bleed enthalpy,-0.2,395.0,392.0,0.10909
+5,cycle,operating age (cycles run),19.3,98.0,64.0,
+5,s4,LPT outlet temperature,-11.1,1419.36,1403.23,0.82224
+5,s7,HPC outlet pressure,7.4,553.29,553.9,-0.07091
+5,s13,corrected fan speed,5.9,2388.15,2388.06,0.00479
+5,s2,LPC outlet temperature,5.0,642.27,642.41,-0.01552
+5,s3,HPC outlet temperature,-3.1,1589.94,1587.43,0.20303
+5,s12,fuel flow to static pressure ratio,3.1,521.0,521.87,-0.01521
+5,s15,bypass ratio,-2.2,8.4362,8.4201,-0.00462
+5,s8,physical fan speed,-1.7,2388.1,2388.06,-0.00024
+5,s14,corrected core speed,1.4,8125.74,8139.37,-0.80824
+5,s17,bleed enthalpy,-1.2,394.0,392.0,0.00606
+5,s9,physical core speed,-0.9,9053.99,9058.2,0.35115
+5,s11,HPC outlet static pressure,-0.9,47.46,47.37,0.00309
+5,s20,HPT coolant bleed,-0.9,38.75,38.92,0.00667
+5,s21,LPT coolant bleed,-0.8,23.4117,23.3511,0.01741
+6,s4,LPT outlet temperature,-21.1,1404.49,1403.23,-0.21042
+6,cycle,operating age (cycles run),18.3,105.0,64.0,
+6,s8,physical fan speed,11.4,2388.14,2388.06,0.0037
+6,s3,HPC outlet temperature,-7.0,1586.94,1587.43,-0.25739
+6,s2,LPC outlet temperature,6.3,643.05,642.41,-0.00861
+6,s20,HPT coolant bleed,-4.6,38.91,38.92,-0.00024
+6,s13,corrected fan speed,4.1,2388.15,2388.06,-0.00194
+6,s21,LPT coolant bleed,3.9,23.3269,23.3511,0.00284
+6,s11,HPC outlet static pressure,2.8,47.51,47.37,0.00485
+6,s17,bleed enthalpy,-1.9,393.0,392.0,-0.14545
+6,s9,physical core speed,-1.5,9055.83,9058.2,0.42036
+6,s14,corrected core speed,1.3,8139.02,8139.37,0.01842
+6,s15,bypass ratio,-0.6,8.4452,8.4201,0.00262
+6,s7,HPC outlet pressure,0.2,553.73,553.9,0.02079
+6,s12,fuel flow to static pressure ratio,0.0,521.56,521.87,0.01394
+7,s15,bypass ratio,-6.3,8.4028,8.4201,0.00296
+7,cycle,operating age (cycles run),5.6,160.0,64.0,
+7,s2,LPC outlet temperature,-3.1,642.1,642.41,0.00436
+7,s9,physical core speed,-2.7,9070.99,9058.2,0.49582
+7,s4,LPT outlet temperature,1.5,1413.57,1403.23,1.65891
+7,s12,fuel flow to static pressure ratio,-1.2,522.32,521.87,0.03739
+7,s14,corrected core speed,1.2,8149.19,8139.37,0.12079
+7,s8,physical fan speed,-1.0,2388.04,2388.06,0.00467
+7,s13,corrected fan speed,1.0,2388.07,2388.06,0.00739
+7,s21,LPT coolant bleed,1.0,23.2763,23.3511,-0.01079
+7,s17,bleed enthalpy,-0.9,393.0,392.0,-0.0303
+7,s7,HPC outlet pressure,0.4,553.42,553.9,0.00455
+7,s11,HPC outlet static pressure,-0.4,47.32,47.37,-0.00261
+7,s20,HPT coolant bleed,-0.3,38.91,38.92,-0.00382
+7,s3,HPC outlet temperature,0.2,1589.59,1587.43,0.04976
+8,cycle,operating age (cycles run),30.1,166.0,64.0,
+8,s15,bypass ratio,19.5,8.4744,8.4201,-0.00056
+8,s4,LPT outlet temperature,-9.1,1413.89,1403.23,0.45836
+8,s2,LPC outlet temperature,8.4,642.59,642.41,0.03558
+8,s3,HPC outlet temperature,6.1,1591.91,1587.43,0.32939
+8,s8,physical fan speed,-5.5,2388.14,2388.06,-0.00261
+8,s9,physical core speed,-5.3,9049.96,9058.2,-0.33321
+8,s20,HPT coolant bleed,-4.3,38.73,38.92,0.01006
+8,s14,corrected core speed,3.9,8127.84,8139.37,-0.20467
+8,s11,HPC outlet static pressure,3.0,47.59,47.37,-0.00055
+8,s17,bleed enthalpy,-2.9,393.0,392.0,-0.13939
+8,s13,corrected fan speed,-2.2,2388.12,2388.06,-0.00352
+8,s21,LPT coolant bleed,1.9,23.2465,23.3511,-0.00141
+8,s7,HPC outlet pressure,-1.5,553.51,553.9,0.04145
+8,s12,fuel flow to static pressure ratio,-1.5,520.53,521.87,-0.03691
+9,s4,LPT outlet temperature,-11.0,1410.27,1403.23,-0.28606
+9,cycle,operating age (cycles run),-5.9,55.0,64.0,
+9,s20,HPT coolant bleed,-4.7,38.78,38.92,-0.00564
+9,s12,fuel flow to static pressure ratio,-3.2,521.65,521.87,0.00158
+9,s3,HPC outlet temperature,-2.5,1593.61,1587.43,-0.06582
+9,s7,HPC outlet pressure,-1.8,552.58,553.9,-0.0123
+9,s13,corrected fan speed,1.0,2388.16,2388.06,0.00739
+9,s14,corrected core speed,1.0,8134.76,8139.37,0.41667
+9,s17,bleed enthalpy,-0.8,392.0,392.0,-0.07273
+9,s2,LPC outlet temperature,-0.5,642.27,642.41,-0.01776
+9,s11,HPC outlet static pressure,-0.5,47.58,47.37,0.0157
+9,s8,physical fan speed,-0.4,2388.13,2388.06,0.00479
+9,s15,bypass ratio,-0.2,8.4293,8.4201,0.00138
+9,s21,LPT coolant bleed,0.2,23.3515,23.3511,0.00374
+9,s9,physical core speed,-0.1,9057.57,9058.2,0.33018
+10,cycle,operating age (cycles run),22.8,192.0,64.0,
+10,s15,bypass ratio,7.6,8.4194,8.4201,-0.00134
+10,s7,HPC outlet pressure,7.0,552.88,553.9,-0.04758
+10,s14,corrected core speed,5.6,8141.91,8139.37,-0.71782
+10,s3,HPC outlet temperature,-4.8,1589.5,1587.43,-0.64297
+10,s11,HPC outlet static pressure,4.0,47.59,47.37,-0.00939
+10,s13,corrected fan speed,2.9,2388.08,2388.06,0.00073
+10,s4,LPT outlet temperature,-2.5,1398.99,1403.23,-1.09055
+10,s2,LPC outlet temperature,2.2,643.0,642.41,0.07873
+10,s9,physical core speed,-1.9,9060.88,9058.2,-0.82006
+10,s21,LPT coolant bleed,-1.9,23.2956,23.3511,-0.0122
+10,s8,physical fan speed,1.8,2388.11,2388.06,0.00418
+10,s17,bleed enthalpy,-0.7,393.0,392.0,0.03636
+10,s20,HPT coolant bleed,-0.6,38.79,38.92,-0.00836
+10,s12,fuel flow to static pressure ratio,-0.4,521.82,521.87,-0.01885
+11,s9,physical core speed,-13.3,9037.11,9058.2,-0.95158
+11,s2,LPC outlet temperature,11.2,642.42,642.41,-0.02018
+11,s21,LPT coolant bleed,7.0,23.2908,23.3511,0.00748
+11,s12,fuel flow to static pressure ratio,-6.6,520.74,521.87,-0.04055
+11,s8,physical fan speed,-5.0,2388.21,2388.06,0.00703
+11,s11,HPC outlet static pressure,-4.4,47.67,47.37,-0.00406
+11,cycle,operating age (cycles run),4.2,83.0,64.0,
+11,s15,bypass ratio,-3.7,8.464,8.4201,-0.00247
+11,s14,corrected core speed,-2.8,8116.85,8139.37,-0.40364
+11,s13,corrected fan speed,2.5,2388.18,2388.06,0.00055
+11,s7,HPC outlet pressure,-2.3,552.8,553.9,-0.01127
+11,s3,HPC outlet temperature,-2.0,1587.73,1587.43,0.27067
+11,s4,LPT outlet temperature,1.4,1414.22,1403.23,0.1617
+11,s17,bleed enthalpy,0.9,394.0,392.0,-0.00606
+11,s20,HPT coolant bleed,0.5,38.66,38.92,-0.00976
+12,cycle,operating age (cycles run),17.4,217.0,64.0,
+12,s14,corrected core speed,8.6,8155.74,8139.37,0.1557
+12,s15,bypass ratio,5.8,8.4482,8.4201,0.00014
+12,s11,HPC outlet static pressure,4.1,47.37,47.37,0.00139
+12,s12,fuel flow to static pressure ratio,-4.0,522.03,521.87,-0.01285
+12,s13,corrected fan speed,3.5,2388.02,2388.06,0.00612
+12,s2,LPC outlet temperature,2.7,642.59,642.41,-0.01079
+12,s8,physical fan speed,-1.3,2388.04,2388.06,0.0017
+12,s7,HPC outlet pressure,-1.2,553.36,553.9,-0.04806
+12,s17,bleed enthalpy,-1.2,393.0,392.0,0.07879
+12,s21,LPT coolant bleed,0.5,23.2861,23.3511,-0.0081
+12,s20,HPT coolant bleed,0.4,38.81,38.92,-0.01085
+12,s9,physical core speed,-0.3,9074.24,9058.2,0.26594
+12,s3,HPC outlet temperature,0.1,1595.9,1587.43,0.13776
+12,s4,LPT outlet temperature,-0.1,1409.64,1403.23,1.22194
+13,s17,bleed enthalpy,-16.4,394.0,392.0,0.06667
+13,s14,corrected core speed,10.4,8146.8,8139.37,0.79824
+13,s7,HPC outlet pressure,10.1,553.28,553.9,0.03382
+13,s13,corrected fan speed,5.1,2388.12,2388.06,0.00497
+13,s9,physical core speed,-4.5,9060.92,9058.2,-0.61188
+13,s3,HPC outlet temperature,-3.8,1591.31,1587.43,0.09861
+13,s20,HPT coolant bleed,3.0,38.75,38.92,-0.0117
+13,s15,bypass ratio,2.4,8.4336,8.4201,-0.00012
+13,s21,LPT coolant bleed,-1.4,23.282,23.3511,-0.01227
+13,cycle,operating age (cycles run),0.9,195.0,64.0,
+13,s4,LPT outlet temperature,0.8,1414.51,1403.23,0.66285
+13,s8,physical fan speed,0.8,2388.1,2388.06,0.00436
+13,s2,LPC outlet temperature,0.7,642.37,642.41,0.00515
+13,s12,fuel flow to static pressure ratio,-0.5,521.3,521.87,-0.05079
+13,s11,HPC outlet static pressure,0.2,47.52,47.37,0.00182
+14,s9,physical core speed,-7.7,9037.35,9058.2,0.27055
+14,s8,physical fan speed,-5.8,2388.17,2388.06,0.002
+14,s4,LPT outlet temperature,-4.7,1408.35,1403.23,0.04818
+14,s15,bypass ratio,-4.1,8.4233,8.4201,-0.00074
+14,cycle,operating age (cycles run),-3.9,46.0,64.0,
+14,s12,fuel flow to static pressure ratio,-1.8,520.66,521.87,-0.06406
+14,s2,LPC outlet temperature,1.5,642.91,642.41,0.02806
+14,s13,corrected fan speed,1.5,2388.1,2388.06,-0.00364
+14,s3,HPC outlet temperature,1.2,1591.39,1587.43,0.1597
+14,s14,corrected core speed,-1.1,8118.1,8139.37,0.14091
+14,s7,HPC outlet pressure,-1.0,553.75,553.9,0.03206
+14,s20,HPT coolant bleed,0.8,38.69,38.92,-0.00158
+14,s11,HPC outlet static pressure,-0.7,47.57,47.37,0.0037
+14,s21,LPT coolant bleed,-0.4,23.2603,23.3511,-0.00925
+14,s17,bleed enthalpy,-0.1,393.0,392.0,-0.14545
+15,s13,corrected fan speed,6.4,2388.11,2388.06,0.00479
+15,cycle,operating age (cycles run),4.3,76.0,64.0,
+15,s14,corrected core speed,3.0,8139.75,8139.37,-0.15279
+15,s20,HPT coolant bleed,-2.9,39.17,38.92,0.00315
+15,s21,LPT coolant bleed,-2.8,23.4085,23.3511,-0.00194
+15,s12,fuel flow to static pressure ratio,1.6,522.12,521.87,-0.01309
+15,s8,physical fan speed,-1.4,2388.1,2388.06,0.00485
+15,s17,bleed enthalpy,1.3,392.0,392.0,0.04848
+15,s7,HPC outlet pressure,0.8,554.08,553.9,0.05273
+15,s9,physical core speed,0.5,9056.1,9058.2,-0.15418
+15,s2,LPC outlet temperature,0.3,642.49,642.41,0.05236
+15,s11,HPC outlet static pressure,-0.2,47.25,47.37,-0.00752
+15,s3,HPC outlet temperature,0.1,1589.21,1587.43,0.90133
+15,s15,bypass ratio,0.1,8.4067,8.4201,0.00089
+15,s4,LPT outlet temperature,0.0,1400.61,1403.23,0.2257
+16,cycle,operating age (cycles run),19.7,113.0,64.0,
+16,s13,corrected fan speed,10.5,2388.08,2388.06,0.00115
+16,s12,fuel flow to static pressure ratio,7.0,521.77,521.87,-0.10121
+16,s2,LPC outlet temperature,6.3,642.99,642.41,0.01448
+16,s21,LPT coolant bleed,3.1,23.304,23.3511,-0.00693
+16,s8,physical fan speed,-2.2,2388.08,2388.06,0.00479
+16,s4,LPT outlet temperature,-1.2,1401.0,1403.23,-0.36248
+16,s15,bypass ratio,1.1,8.4299,8.4201,0.00184
+16,s14,corrected core speed,1.0,8147.4,8139.37,0.19945
+16,s7,HPC outlet pressure,-0.9,554.6,553.9,0.078
+16,s11,HPC outlet static pressure,-0.8,47.37,47.37,-0.00242
+16,s17,bleed enthalpy,-0.5,391.0,392.0,-0.06667
+16,s9,physical core speed,0.3,9059.75,9058.2,0.31303
+16,s20,HPT coolant bleed,0.3,38.81,38.92,-0.00824
+16,s3,HPC outlet temperature,0.0,1587.03,1587.43,0.26782
+17,cycle,operating age (cycles run),27.0,165.0,64.0,
+17,s9,physical core speed,18.1,9094.72,9058.2,0.63248
+17,s14,corrected core speed,14.8,8171.98,8139.37,0.40545
+17,s3,HPC outlet temperature,6.2,1599.17,1587.43,0.01624
+17,s20,HPT coolant bleed,6.1,38.7,38.92,0.00333
+17,s2,LPC outlet temperature,6.0,642.9,642.41,0.04067
+17,s7,HPC outlet pressure,-4.8,553.49,553.9,0.03152
+17,s15,bypass ratio,4.8,8.4319,8.4201,-0.00154
+17,s11,HPC outlet static pressure,4.0,47.55,47.37,-0.00764
+17,s13,corrected fan speed,3.8,2388.03,2388.06,-0.00079
+17,s21,LPT coolant bleed,3.7,23.2948,23.3511,-0.00396
+17,s17,bleed enthalpy,1.4,394.0,392.0,0.12121
+17,s8,physical fan speed,0.6,2388.06,2388.06,0.00097
+17,s4,LPT outlet temperature,0.3,1412.54,1403.23,0.12612
+17,s12,fuel flow to static pressure ratio,-0.0,521.52,521.87,-0.01309
+18,cycle,operating age (cycles run),33.9,133.0,64.0,
+18,s15,bypass ratio,12.8,8.4418,8.4201,-0.00127
+18,s8,physical fan speed,11.5,2388.14,2388.06,0.00297
+18,s3,HPC outlet temperature,7.8,1600.45,1587.43,1.09739
+18,s4,LPT outlet temperature,-7.4,1419.18,1403.23,0.53642
+18,s2,LPC outlet temperature,6.1,643.0,642.41,0.06218
+18,s12,fuel flow to static pressure ratio,5.8,521.06,521.87,0.05194
+18,s14,corrected core speed,5.0,8136.8,8139.37,0.07855
+18,s11,HPC outlet static pressure,4.7,47.7,47.37,-0.00188
+18,s7,HPC outlet pressure,-4.1,553.36,553.9,0.01873
+18,s13,corrected fan speed,3.5,2388.19,2388.06,0.00212
+18,s20,HPT coolant bleed,1.7,38.71,38.92,-0.00309
+18,s17,bleed enthalpy,1.6,395.0,392.0,0.01212
+18,s9,physical core speed,1.4,9056.09,9058.2,0.668
+18,s21,LPT coolant bleed,-1.2,23.2637,23.3511,-0.00354
+19,cycle,operating age (cycles run),17.3,135.0,64.0,
+19,s13,corrected fan speed,8.0,2388.06,2388.06,0.00248
+19,s11,HPC outlet static pressure,7.7,47.35,47.37,0.00782
+19,s14,corrected core speed,4.2,8140.2,8139.37,-0.29321
+19,s8,physical fan speed,3.7,2388.1,2388.06,0.00236
+19,s15,bypass ratio,2.7,8.4768,8.4201,0.00137
+19,s21,LPT coolant bleed,2.3,23.3297,23.3511,-0.00038
+19,s20,HPT coolant bleed,1.9,38.83,38.92,0.002
+19,s2,LPC outlet temperature,1.4,642.79,642.41,0.02352
+19,s7,HPC outlet pressure,1.1,553.87,553.9,0.02521
+19,s9,physical core speed,-0.8,9055.54,9058.2,0.13255
+19,s4,LPT outlet temperature,0.4,1406.32,1403.23,0.55509
+19,s17,bleed enthalpy,0.4,393.0,392.0,0.14545
+19,s12,fuel flow to static pressure ratio,0.3,521.48,521.87,-0.03279
+19,s3,HPC outlet temperature,-0.2,1588.88,1587.43,0.24909
+20,s11,HPC outlet static pressure,23.4,48.13,47.37,0.04024
+20,s2,LPC outlet temperature,23.0,643.75,642.41,0.06012
+20,s3,HPC outlet temperature,16.6,1595.12,1587.43,0.42994
+20,s4,LPT outlet temperature,16.6,1419.6,1403.23,0.15667
+20,s15,bypass ratio,11.4,8.469,8.4201,0.00209
+20,s7,HPC outlet pressure,5.2,552.19,553.9,-0.05655
+20,s13,corrected fan speed,5.2,2388.21,2388.06,0.00661
+20,s21,LPT coolant bleed,2.8,23.0242,23.3511,-0.01293
+20,s12,fuel flow to static pressure ratio,-1.4,520.64,521.87,0.00703
+20,cycle,operating age (cycles run),-1.2,184.0,64.0,
+20,s20,HPT coolant bleed,1.2,38.35,38.92,-0.03697
+20,s9,physical core speed,-0.8,9066.49,9058.2,-0.60127
+20,s8,physical fan speed,0.3,2388.14,2388.06,0.00364
+20,s14,corrected core speed,0.3,8138.86,8139.37,-0.10842
+20,s17,bleed enthalpy,-0.3,395.0,392.0,0.19394
+21,cycle,operating age (cycles run),22.1,148.0,64.0,
+21,s9,physical core speed,14.4,9087.25,9058.2,-0.28042
+21,s14,corrected core speed,11.7,8168.51,8139.37,0.73067
+21,s2,LPC outlet temperature,4.2,642.66,642.41,0.05164
+21,s3,HPC outlet temperature,3.8,1592.32,1587.43,0.52976
+21,s11,HPC outlet static pressure,3.1,47.46,47.37,-0.00182
+21,s15,bypass ratio,2.5,8.441,8.4201,0.00405
+21,s7,HPC outlet pressure,2.2,553.86,553.9,0.0597
+21,s21,LPT coolant bleed,2.2,23.4982,23.3511,0.0131
+21,s20,HPT coolant bleed,1.7,38.74,38.92,-0.02164
+21,s13,corrected fan speed,-0.9,2388.07,2388.06,0.00406
+21,s17,bleed enthalpy,0.9,392.0,392.0,0.09697
+21,s4,LPT outlet temperature,0.6,1403.77,1403.23,0.16558
+21,s8,physical fan speed,-0.4,2388.06,2388.06,0.00042
+21,s12,fuel flow to static pressure ratio,0.0,522.02,521.87,-0.01042
+22,cycle,operating age (cycles run),-12.0,39.0,64.0,
+22,s14,corrected core speed,-2.8,8133.12,8139.37,-0.46679
+22,s12,fuel flow to static pressure ratio,-2.1,521.77,521.87,0.06727
+22,s4,LPT outlet temperature,-2.0,1410.16,1403.23,0.51061
+22,s9,physical core speed,1.3,9055.41,9058.2,-0.2503
+22,s7,HPC outlet pressure,-0.9,554.04,553.9,-0.03697
+22,s17,bleed enthalpy,0.9,392.0,392.0,0.02424
+22,s13,corrected fan speed,-0.6,2388.11,2388.06,0.00194
+22,s2,LPC outlet temperature,0.5,642.5,642.41,0.02715
+22,s8,physical fan speed,0.5,2388.09,2388.06,-0.00182
+22,s21,LPT coolant bleed,-0.5,23.3058,23.3511,0.00119
+22,s3,HPC outlet temperature,0.3,1583.42,1587.43,0.09721
+22,s20,HPT coolant bleed,0.2,38.97,38.92,-0.00479
+22,s11,HPC outlet static pressure,-0.0,47.36,47.37,0.00382
+22,s15,bypass ratio,0.0,8.4143,8.4201,-0.00144
+23,s9,physical core speed,-8.8,9051.1,9058.2,-0.59909
+23,s17,bleed enthalpy,-8.1,392.0,392.0,-0.03636
+23,s13,corrected fan speed,6.4,2388.08,2388.06,0.00703
+23,s3,HPC outlet temperature,2.6,1588.77,1587.43,0.53588
+23,s15,bypass ratio,-2.3,8.4249,8.4201,-0.00125
+23,s2,LPC outlet temperature,2.2,642.03,642.41,0.03158
+23,s21,LPT coolant bleed,-2.2,23.2815,23.3511,0.00194
+23,cycle,operating age (cycles run),1.6,130.0,64.0,
+23,s11,HPC outlet static pressure,-1.4,47.22,47.37,-0.01436
+23,s12,fuel flow to static pressure ratio,1.4,521.83,521.87,-0.01303
+23,s14,corrected core speed,1.3,8133.6,8139.37,-0.01042
+23,s8,physical fan speed,-1.0,2388.05,2388.06,0.00309
+23,s4,LPT outlet temperature,-0.9,1403.06,1403.23,-0.00442
+23,s7,HPC outlet pressure,-0.2,554.15,553.9,0.014
+23,s20,HPT coolant bleed,0.1,38.97,38.92,-0.00176
+24,s14,corrected core speed,12.7,8211.21,8139.37,1.73842
+24,s3,HPC outlet temperature,10.9,1593.82,1587.43,-0.38067
+24,s15,bypass ratio,9.7,8.4785,8.4201,0.00294
+24,s2,LPC outlet temperature,7.6,643.28,642.41,0.00418
+24,s9,physical core speed,5.6,9148.56,9058.2,2.03533
+24,cycle,operating age (cycles run),5.3,186.0,64.0,
+24,s11,HPC outlet static pressure,5.3,47.7,47.37,0.02339
+24,s20,HPT coolant bleed,-4.8,38.72,38.92,-0.02891
+24,s4,LPT outlet temperature,4.1,1415.13,1403.23,0.36624
+24,s7,HPC outlet pressure,2.0,553.78,553.9,0.00836
+24,s21,LPT coolant bleed,-1.7,23.2093,23.3511,0.01053
+24,s8,physical fan speed,1.4,2388.08,2388.06,0.00455
+24,s12,fuel flow to static pressure ratio,-0.9,520.69,521.87,-0.06667
+24,s13,corrected fan speed,0.3,2388.07,2388.06,0.00012
+24,s17,bleed enthalpy,-0.1,393.0,392.0,-0.09697
+25,s9,physical core speed,-3.7,9046.2,9058.2,-0.38588
+25,s2,LPC outlet temperature,2.3,642.92,642.41,-0.01085
+25,s15,bypass ratio,1.0,8.4422,8.4201,-0.00392
+25,s14,corrected core speed,-0.8,8132.18,8139.37,0.318
+25,s21,LPT coolant bleed,-0.5,23.3876,23.3511,0.00293
+25,s20,HPT coolant bleed,0.4,38.9,38.92,-0.00321
+25,s3,HPC outlet temperature,0.3,1584.08,1587.43,0.44642
+25,s8,physical fan speed,0.2,2388.08,2388.06,0.00188
+25,cycle,operating age (cycles run),-0.1,48.0,64.0,
+25,s4,LPT outlet temperature,-0.1,1403.1,1403.23,-0.30358
+25,s11,HPC outlet static pressure,0.1,47.38,47.37,-0.00212
+25,s12,fuel flow to static pressure ratio,-0.1,521.75,521.87,-0.00127
+25,s13,corrected fan speed,0.1,2388.07,2388.06,0.00212
+25,s7,HPC outlet pressure,-0.0,553.55,553.9,0.03842
+25,s17,bleed enthalpy,-0.0,394.0,392.0,0.09697
+26,cycle,operating age (cycles run),5.1,76.0,64.0,
+26,s3,HPC outlet temperature,3.8,1580.98,1587.43,-0.26024
+26,s2,LPC outlet temperature,2.2,642.31,642.41,0.01297
+26,s17,bleed enthalpy,-2.2,392.0,392.0,-0.15152
+26,s8,physical fan speed,-2.1,2388.02,2388.06,0.00152
+26,s12,fuel flow to static pressure ratio,1.3,521.93,521.87,-0.01267
+26,s13,corrected fan speed,1.2,2387.98,2388.06,-0.00309
+26,s15,bypass ratio,-1.2,8.4331,8.4201,-0.00257
+26,s9,physical core speed,-1.0,9074.01,9058.2,-0.47576
+26,s20,HPT coolant bleed,0.9,38.89,38.92,-0.00667
+26,s4,LPT outlet temperature,-0.5,1402.4,1403.23,-0.38715
+26,s7,HPC outlet pressure,-0.4,554.45,553.9,-0.00345
+26,s14,corrected core speed,0.4,8151.64,8139.37,0.60836
+26,s11,HPC outlet static pressure,0.3,47.4,47.37,0.012
+26,s21,LPT coolant bleed,-0.2,23.366,23.3511,0.00566
+27,cycle,operating age (cycles run),16.8,140.0,64.0,
+27,s3,HPC outlet temperature,-9.9,1586.56,1587.43,-0.16909
+27,s8,physical fan speed,9.0,2388.06,2388.06,0.00279
+27,s7,HPC outlet pressure,4.1,553.3,553.9,0.01461
+27,s14,corrected core speed,4.1,8124.15,8139.37,-0.4877
+27,s12,fuel flow to static pressure ratio,-2.8,521.64,521.87,0.02309
+27,s4,LPT outlet temperature,-2.6,1407.16,1403.23,-0.49727
+27,s15,bypass ratio,2.5,8.44,8.4201,-2e-05
+27,s11,HPC outlet static pressure,2.4,47.44,47.37,-0.0057
+27,s2,LPC outlet temperature,2.3,642.56,642.41,0.01255
+27,s21,LPT coolant bleed,2.3,23.185,23.3511,-0.0045
+27,s9,physical core speed,-1.9,9049.45,9058.2,-0.20382
+27,s13,corrected fan speed,1.2,2388.14,2388.06,-0.00018
+27,s17,bleed enthalpy,-0.2,392.0,392.0,-0.04848
+27,s20,HPT coolant bleed,0.1,38.9,38.92,0.00115
+28,cycle,operating age (cycles run),14.8,158.0,64.0,
+28,s4,LPT outlet temperature,-13.5,1405.28,1403.23,-0.52758
+28,s2,LPC outlet temperature,7.4,642.86,642.41,0.04382
+28,s20,HPT coolant bleed,-6.2,38.86,38.92,-0.008
+28,s3,HPC outlet temperature,-5.4,1590.81,1587.43,-0.23218
+28,s9,physical core speed,5.2,9065.84,9058.2,0.98139
+28,s14,corrected core speed,3.9,8134.63,8139.37,-0.05085
+28,s11,HPC outlet static pressure,2.6,47.59,47.37,0.006
+28,s17,bleed enthalpy,-1.7,393.0,392.0,-0.06061
+28,s13,corrected fan speed,-1.4,2388.11,2388.06,-0.00145
+28,s12,fuel flow to static pressure ratio,-1.3,521.63,521.87,0.08606
+28,s7,HPC outlet pressure,-1.0,553.26,553.9,0.01364
+28,s21,LPT coolant bleed,0.6,23.2826,23.3511,-0.00206
+28,s15,bypass ratio,-0.3,8.4564,8.4201,0.0008
+28,s8,physical fan speed,-0.2,2388.1,2388.06,-0.00491
+29,cycle,operating age (cycles run),17.4,171.0,64.0,
+29,s14,corrected core speed,14.1,8147.27,8139.37,0.1497
+29,s3,HPC outlet temperature,-9.3,1585.72,1587.43,-0.26339
+29,s15,bypass ratio,4.8,8.4202,8.4201,-0.00193
+29,s17,bleed enthalpy,-4.2,393.0,392.0,0.04242
+29,s9,physical core speed,3.9,9074.11,9058.2,-0.2157
+29,s13,corrected fan speed,3.6,2388.07,2388.06,0.00212
+29,s11,HPC outlet static pressure,3.4,47.26,47.37,-0.0257
+29,s7,HPC outlet pressure,3.0,553.29,553.9,0.02303
+29,s4,LPT outlet temperature,2.7,1405.88,1403.23,0.45594
+29,s2,LPC outlet temperature,2.5,642.53,642.41,0.01758
+29,s21,LPT coolant bleed,-1.9,23.1975,23.3511,-0.01211
+29,s20,HPT coolant bleed,-0.9,38.98,38.92,0.0143
+29,s12,fuel flow to static pressure ratio,-0.5,521.57,521.87,-0.0123
+29,s8,physical fan speed,0.0,2388.08,2388.06,0.00048
+30,cycle,operating age (cycles run),20.9,143.0,64.0,
+30,s4,LPT outlet temperature,-11.5,1408.62,1403.23,-0.22861
+30,s13,corrected fan speed,8.9,2388.13,2388.06,-0.00285
+30,s12,fuel flow to static pressure ratio,-7.7,521.32,521.87,-0.02824
+30,s2,LPC outlet temperature,5.1,642.54,642.41,-0.01376
+30,s15,bypass ratio,-5.1,8.4829,8.4201,0.00589
+30,s20,HPT coolant bleed,-5.1,38.78,38.92,-0.00739
+30,s9,physical core speed,-3.8,9057.71,9058.2,-0.03885
+30,s3,HPC outlet temperature,3.5,1599.22,1587.43,0.89667
+30,s7,HPC outlet pressure,-2.5,553.01,553.9,0.05467
+30,s21,LPT coolant bleed,-2.3,23.3175,23.3511,0.01227
+30,s8,physical fan speed,-2.1,2388.12,2388.06,0.00194
+30,s11,HPC outlet static pressure,1.3,47.61,47.37,-0.01964
+30,s14,corrected core speed,1.1,8135.44,8139.37,0.15521
+30,s17,bleed enthalpy,0.1,393.0,392.0,0.15152
+31,s3,HPC outlet temperature,21.3,1598.19,1587.43,0.26594
+31,s2,LPC outlet temperature,19.9,643.31,642.41,0.04006
+31,s4,LPT outlet temperature,19.1,1420.66,1403.23,0.13055
+31,s11,HPC outlet static pressure,15.6,47.78,47.37,0.00345
+31,s15,bypass ratio,10.5,8.5015,8.4201,-0.00138
+31,s20,HPT coolant bleed,-6.2,38.53,38.92,-0.00364
+31,s7,HPC outlet pressure,4.7,551.48,553.9,-0.04836
+31,s12,fuel flow to static pressure ratio,4.6,519.55,521.87,-0.03248
+31,cycle,operating age (cycles run),-3.9,196.0,64.0,
+31,s21,LPT coolant bleed,3.3,23.1105,23.3511,-0.0137
+31,s8,physical fan speed,-2.2,2388.18,2388.06,-0.00224
+31,s13,corrected fan speed,2.2,2388.22,2388.06,0.00455
+31,s17,bleed enthalpy,-0.9,395.0,392.0,0.0
+31,s9,physical core speed,0.3,9090.98,9058.2,1.18758
+31,s14,corrected core speed,-0.2,8157.84,8139.37,0.09279
+32,cycle,operating age (cycles run),44.3,145.0,64.0,
+32,s14,corrected core speed,27.2,8173.9,8139.37,0.52552
+32,s9,physical core speed,25.1,9105.13,9058.2,0.95552
+32,s15,bypass ratio,7.5,8.438,8.4201,0.00201
+32,s2,LPC outlet temperature,6.8,642.96,642.41,0.02194
+32,s3,HPC outlet temperature,6.2,1587.37,1587.43,-0.04467
+32,s4,LPT outlet temperature,-2.5,1406.22,1403.23,0.79752
+32,s11,HPC outlet static pressure,2.5,47.48,47.37,0.01473
+32,s21,LPT coolant bleed,2.5,23.3456,23.3511,-0.00175
+32,s17,bleed enthalpy,-1.8,394.0,392.0,-0.02424
+32,s7,HPC outlet pressure,-1.5,553.84,553.9,0.02867
+32,s12,fuel flow to static pressure ratio,-1.5,522.3,521.87,0.03364
+32,s13,corrected fan speed,0.8,2388.05,2388.06,0.00206
+32,s8,physical fan speed,0.6,2388.05,2388.06,0.00018
+32,s20,HPT coolant bleed,-0.1,38.84,38.92,-0.00352
+33,s4,LPT outlet temperature,-4.8,1416.53,1403.23,0.41382
+33,s7,HPC outlet pressure,-3.2,553.56,553.9,0.05939
+33,cycle,operating age (cycles run),-2.7,50.0,64.0,
+33,s2,LPC outlet temperature,-2.6,642.42,642.41,-0.01945
+33,s3,HPC outlet temperature,-2.5,1579.36,1587.43,-1.39533
+33,s15,bypass ratio,-1.7,8.4463,8.4201,-0.00014
+33,s14,corrected core speed,1.6,8134.27,8139.37,-0.07642
+33,s9,physical core speed,-1.4,9059.56,9058.2,0.26248
+33,s11,HPC outlet static pressure,-1.4,47.61,47.37,-0.00618
+33,s8,physical fan speed,1.0,2388.14,2388.06,0.00109
+33,s12,fuel flow to static pressure ratio,-0.8,520.95,521.87,0.01224
+33,s20,HPT coolant bleed,-0.8,38.73,38.92,-0.018
+33,s13,corrected fan speed,0.7,2388.11,2388.06,6e-05
+33,s21,LPT coolant bleed,-0.3,23.2843,23.3511,-0.00399
+33,s17,bleed enthalpy,-0.1,392.0,392.0,-0.12121
+34,s11,HPC outlet static pressure,25.9,48.13,47.37,0.02352
+34,s2,LPC outlet temperature,23.0,643.74,642.41,0.01861
+34,s4,LPT outlet temperature,16.6,1427.49,1403.23,1.61764
+34,s3,HPC outlet temperature,13.9,1600.38,1587.43,0.76945
+34,s15,bypass ratio,12.7,8.5158,8.4201,0.00148
+34,s21,LPT coolant bleed,8.8,23.0641,23.3511,-0.01059
+34,s13,corrected fan speed,7.2,2388.25,2388.06,0.00745
+34,s17,bleed enthalpy,4.9,397.0,392.0,0.14545
+34,s7,HPC outlet pressure,4.5,551.77,553.9,-0.03503
+34,s12,fuel flow to static pressure ratio,4.4,519.44,521.87,-0.09697
+34,s8,physical fan speed,-3.0,2388.29,2388.06,0.00618
+34,s20,HPT coolant bleed,-3.0,38.62,38.92,-0.02382
+34,cycle,operating age (cycles run),1.3,203.0,64.0,
+34,s9,physical core speed,1.1,9036.27,9058.2,-1.18576
+34,s14,corrected core speed,1.0,8122.11,8139.37,-0.16188
+35,s11,HPC outlet static pressure,23.6,48.1,47.37,0.02158
+35,s2,LPC outlet temperature,20.1,643.4,642.41,0.02327
+35,s3,HPC outlet temperature,18.1,1602.02,1587.43,0.20164
+35,s4,LPT outlet temperature,17.3,1428.42,1403.23,0.81212
+35,s15,bypass ratio,12.9,8.5141,8.4201,-1e-05
+35,s20,HPT coolant bleed,-8.3,38.63,38.92,0.00164
+35,s21,LPT coolant bleed,6.5,23.1161,23.3511,-0.00908
+35,s7,HPC outlet pressure,4.8,551.76,553.9,-0.06145
+35,s12,fuel flow to static pressure ratio,4.3,519.81,521.87,-0.04412
+35,s17,bleed enthalpy,2.7,395.0,392.0,0.03636
+35,cycle,operating age (cycles run),-1.9,198.0,64.0,
+35,s13,corrected fan speed,1.2,2388.22,2388.06,0.00242
+35,s9,physical core speed,-1.0,9079.88,9058.2,1.15358
+35,s14,corrected core speed,0.5,8153.85,8139.37,0.48727
+35,s8,physical fan speed,-0.1,2388.26,2388.06,0.00388
+36,s2,LPC outlet temperature,20.4,642.94,642.41,-0.00491
+36,s3,HPC outlet temperature,17.6,1599.19,1587.43,0.80818
+36,s11,HPC outlet static pressure,16.5,47.94,47.37,0.00503
+36,s4,LPT outlet temperature,13.5,1418.98,1403.23,0.20903
+36,s15,bypass ratio,10.4,8.5259,8.4201,0.00389
+36,s13,corrected fan speed,7.9,2388.22,2388.06,0.00552
+36,s20,HPT coolant bleed,-7.0,38.54,38.92,-0.00667
+36,s17,bleed enthalpy,3.9,394.0,392.0,-0.10303
+36,s8,physical fan speed,-3.3,2388.16,2388.06,-0.00339
+36,s7,HPC outlet pressure,3.1,552.32,553.9,-0.07442
+36,s14,corrected core speed,2.9,8136.96,8139.37,-0.15358
+36,s21,LPT coolant bleed,1.8,23.1534,23.3511,0.00118
+36,s9,physical core speed,1.4,9056.3,9058.2,0.77764
+36,cycle,operating age (cycles run),-1.3,126.0,64.0,
+36,s12,fuel flow to static pressure ratio,0.2,520.01,521.87,-0.05758
+37,cycle,operating age (cycles run),22.4,121.0,64.0,
+37,s2,LPC outlet temperature,21.2,643.34,642.41,0.06679
+37,s11,HPC outlet static pressure,14.5,47.69,47.37,0.00873
+37,s15,bypass ratio,11.0,8.4944,8.4201,0.00211
+37,s3,HPC outlet temperature,5.8,1593.15,1587.43,-0.62394
+37,s7,HPC outlet pressure,5.1,552.56,553.9,0.00836
+37,s8,physical fan speed,5.1,2388.18,2388.06,0.00182
+37,s13,corrected fan speed,5.0,2388.15,2388.06,0.00352
+37,s4,LPT outlet temperature,-4.4,1413.38,1403.23,0.4117
+37,s20,HPT coolant bleed,2.5,38.76,38.92,-0.03036
+37,s12,fuel flow to static pressure ratio,-2.3,520.69,521.87,-0.00976
+37,s17,bleed enthalpy,1.9,394.0,392.0,0.0
+37,s9,physical core speed,0.9,9041.71,9058.2,-0.19915
+37,s14,corrected core speed,-0.2,8119.07,8139.37,-0.51576
+37,s21,LPT coolant bleed,0.2,23.2145,23.3511,0.00559
+38,cycle,operating age (cycles run),29.8,125.0,64.0,
+38,s14,corrected core speed,13.2,8160.76,8139.37,1.12036
+38,s2,LPC outlet temperature,8.2,643.04,642.41,-0.03642
+38,s20,HPT coolant bleed,-8.2,38.78,38.92,0.00158
+38,s11,HPC outlet static pressure,6.7,47.86,47.37,0.02309
+38,s9,physical core speed,5.0,9086.18,9058.2,0.94691
+38,s15,bypass ratio,5.0,8.4695,8.4201,0.00327
+38,s12,fuel flow to static pressure ratio,-3.9,520.91,521.87,-0.07442
+38,s21,LPT coolant bleed,2.6,23.1739,23.3511,-0.00034
+38,s3,HPC outlet temperature,2.5,1588.23,1587.43,0.02927
+38,s7,HPC outlet pressure,-2.4,553.09,553.9,0.01255
+38,s4,LPT outlet temperature,-2.3,1404.91,1403.23,0.35806
+38,s17,bleed enthalpy,-1.6,393.0,392.0,-0.1697
+38,s8,physical fan speed,-0.9,2388.14,2388.06,0.00073
+38,s13,corrected fan speed,-0.2,2388.15,2388.06,0.00188
+39,cycle,operating age (cycles run),-9.4,37.0,64.0,
+39,s14,corrected core speed,7.7,8147.31,8139.37,0.42048
+39,s20,HPT coolant bleed,-5.4,38.82,38.92,-0.01115
+39,s17,bleed enthalpy,-2.4,393.0,392.0,0.10303
+39,s2,LPC outlet temperature,1.5,642.09,642.41,-0.03903
+39,s7,HPC outlet pressure,-1.1,554.03,553.9,0.00048
+39,s21,LPT coolant bleed,0.8,23.3721,23.3511,-0.00721
+39,s3,HPC outlet temperature,-0.7,1581.58,1587.43,-0.11012
+39,s13,corrected fan speed,-0.7,2388.0,2388.06,0.00103
+39,s15,bypass ratio,-0.7,8.3904,8.4201,0.00093
+39,s8,physical fan speed,-0.6,2388.02,2388.06,-0.00303
+39,s11,HPC outlet static pressure,-0.4,47.2,47.37,0.00182
+39,s12,fuel flow to static pressure ratio,-0.3,521.94,521.87,-0.04976
+39,s9,physical core speed,0.1,9061.91,9058.2,-0.20776
+39,s4,LPT outlet temperature,-0.0,1402.17,1403.23,0.32376
+40,s2,LPC outlet temperature,15.7,643.2,642.41,-0.00188
+40,s4,LPT outlet temperature,12.6,1420.48,1403.23,0.42594
+40,s3,HPC outlet temperature,11.3,1603.15,1587.43,0.28976
+40,s11,HPC outlet static pressure,10.2,47.84,47.37,0.00582
+40,s20,HPT coolant bleed,-9.1,38.58,38.92,-0.00485
+40,s15,bypass ratio,6.5,8.47,8.4201,-0.00236
+40,s13,corrected fan speed,4.9,2388.17,2388.06,-0.00594
+40,s7,HPC outlet pressure,4.5,552.57,553.9,-0.03079
+40,s17,bleed enthalpy,-3.0,396.0,392.0,-0.02424
+40,s12,fuel flow to static pressure ratio,-2.3,520.41,521.87,-0.00685
+40,s8,physical fan speed,-2.2,2388.17,2388.06,0.00012
+40,s14,corrected core speed,2.1,8143.07,8139.37,0.99976
+40,s21,LPT coolant bleed,1.3,23.0906,23.3511,0.00544
+40,cycle,operating age (cycles run),-0.1,133.0,64.0,
+40,s9,physical core speed,0.0,9066.45,9058.2,0.74267
+41,cycle,operating age (cycles run),25.0,123.0,64.0,
+41,s9,physical core speed,-15.9,9036.88,9058.2,-0.34964
+41,s15,bypass ratio,11.6,8.4533,8.4201,0.00158
+41,s11,HPC outlet static pressure,10.6,47.64,47.37,0.01394
+41,s4,LPT outlet temperature,-9.5,1416.76,1403.23,0.21721
+41,s7,HPC outlet pressure,7.9,553.02,553.9,-0.068
+41,s8,physical fan speed,7.9,2388.19,2388.06,0.0023
+41,s2,LPC outlet temperature,6.7,642.54,642.41,0.04218
+41,s21,LPT coolant bleed,5.2,23.1718,23.3511,-0.00922
+41,s12,fuel flow to static pressure ratio,4.7,520.61,521.87,-0.08042
+41,s14,corrected core speed,-4.4,8115.82,8139.37,-0.23758
+41,s20,HPT coolant bleed,3.0,38.84,38.92,-0.00836
+41,s13,corrected fan speed,1.9,2388.2,2388.06,0.00358
+41,s17,bleed enthalpy,1.6,395.0,392.0,0.16364
+41,s3,HPC outlet temperature,0.7,1594.24,1587.43,-0.34055
+42,s2,LPC outlet temperature,20.6,643.31,642.41,0.01455
+42,s11,HPC outlet static pressure,16.0,47.89,47.37,0.01648
+42,s3,HPC outlet temperature,9.3,1599.55,1587.43,0.13448
+42,s15,bypass ratio,9.1,8.4792,8.4201,-4e-05
+42,s21,LPT coolant bleed,7.5,23.094,23.3511,-0.00503
+42,s4,LPT outlet temperature,5.6,1425.12,1403.23,0.87176
+42,s12,fuel flow to static pressure ratio,5.3,520.54,521.87,-0.05503
+42,s9,physical core speed,-5.2,9026.89,9058.2,-0.25012
+42,s7,HPC outlet pressure,5.0,550.94,553.9,-0.08418
+42,s20,HPT coolant bleed,-4.0,38.51,38.92,-0.01903
+42,s17,bleed enthalpy,3.9,395.0,392.0,0.09091
+42,s14,corrected core speed,-2.8,8118.45,8139.37,0.13994
+42,s13,corrected fan speed,2.7,2388.27,2388.06,0.00036
+42,s8,physical fan speed,1.9,2388.27,2388.06,0.01164
+42,cycle,operating age (cycles run),0.5,156.0,64.0,
+43,cycle,operating age (cycles run),25.9,172.0,64.0,
+43,s2,LPC outlet temperature,14.7,642.77,642.41,0.03024
+43,s11,HPC outlet static pressure,9.9,47.6,47.37,0.01715
+43,s4,LPT outlet temperature,-7.4,1418.4,1403.23,0.25345
+43,s7,HPC outlet pressure,6.2,552.25,553.9,-0.0263
+43,s3,HPC outlet temperature,-5.7,1594.19,1587.43,0.17097
+43,s14,corrected core speed,5.0,8135.46,8139.37,-0.22455
+43,s8,physical fan speed,-3.6,2388.13,2388.06,-0.00176
+43,s21,LPT coolant bleed,2.8,23.2379,23.3511,-0.005
+43,s20,HPT coolant bleed,-2.1,38.63,38.92,-0.01836
+43,s17,bleed enthalpy,1.8,394.0,392.0,0.14545
+43,s12,fuel flow to static pressure ratio,-1.1,520.86,521.87,0.00655
+43,s9,physical core speed,-0.9,9052.93,9058.2,-0.16036
+43,s13,corrected fan speed,0.8,2388.16,2388.06,0.00158
+43,s15,bypass ratio,0.7,8.4456,8.4201,0.00107
+44,s4,LPT outlet temperature,-3.6,1415.29,1403.23,0.38564
+44,s12,fuel flow to static pressure ratio,-3.5,521.73,521.87,-0.02655
+44,s13,corrected fan speed,1.5,2388.1,2388.06,0.00036
+44,cycle,operating age (cycles run),-1.3,54.0,64.0,
+44,s3,HPC outlet temperature,-1.3,1582.3,1587.43,-0.15558
+44,s11,HPC outlet static pressure,-1.3,47.52,47.37,0.00133
+44,s8,physical fan speed,1.1,2388.13,2388.06,0.00776
+44,s15,bypass ratio,1.1,8.4391,8.4201,0.00548
+44,s20,HPT coolant bleed,1.1,38.85,38.92,0.00139
+44,s21,LPT coolant bleed,0.9,23.3058,23.3511,0.00891
+44,s7,HPC outlet pressure,-0.7,552.97,553.9,0.05206
+44,s9,physical core speed,-0.6,9057.77,9058.2,0.57455
+44,s14,corrected core speed,0.3,8131.44,8139.37,0.21315
+44,s2,LPC outlet temperature,-0.2,642.49,642.41,-0.01473
+44,s17,bleed enthalpy,0.1,392.0,392.0,-0.17576
+45,cycle,operating age (cycles run),24.4,152.0,64.0,
+45,s2,LPC outlet temperature,16.0,642.75,642.41,0.00158
+45,s15,bypass ratio,12.2,8.4695,8.4201,0.00305
+45,s4,LPT outlet temperature,-10.4,1410.33,1403.23,-0.16606
+45,s3,HPC outlet temperature,4.2,1598.59,1587.43,0.54824
+45,s13,corrected fan speed,3.8,2388.15,2388.06,0.00673
+45,s20,HPT coolant bleed,3.1,38.58,38.92,-0.00388
+45,s9,physical core speed,-2.4,9067.31,9058.2,-0.15618
+45,s17,bleed enthalpy,2.3,394.0,392.0,0.11515
+45,s7,HPC outlet pressure,-2.2,553.2,553.9,-0.01545
+45,s11,HPC outlet static pressure,1.7,47.57,47.37,-0.00218
+45,s14,corrected core speed,1.4,8140.56,8139.37,-0.07958
+45,s12,fuel flow to static pressure ratio,-0.8,520.76,521.87,-0.04927
+45,s8,physical fan speed,-0.7,2388.15,2388.06,0.00067
+45,s21,LPT coolant bleed,-0.6,23.312,23.3511,0.0011
+46,cycle,operating age (cycles run),19.5,146.0,64.0,
+46,s2,LPC outlet temperature,13.9,642.79,642.41,0.03885
+46,s3,HPC outlet temperature,8.3,1594.28,1587.43,-0.19915
+46,s14,corrected core speed,6.0,8153.86,8139.37,0.0103
+46,s12,fuel flow to static pressure ratio,-5.5,520.97,521.87,-0.02497
+46,s11,HPC outlet static pressure,4.6,47.74,47.37,0.00048
+46,s7,HPC outlet pressure,3.0,552.73,553.9,0.00164
+46,s21,LPT coolant bleed,-1.9,23.1876,23.3511,0.00063
+46,s13,corrected fan speed,1.3,2388.11,2388.06,0.00139
+46,s15,bypass ratio,1.2,8.4628,8.4201,0.00207
+46,s8,physical fan speed,1.1,2388.12,2388.06,0.00358
+46,s9,physical core speed,1.1,9080.61,9058.2,0.41164
+46,s17,bleed enthalpy,-0.9,393.0,392.0,-0.05455
+46,s20,HPT coolant bleed,-0.8,38.61,38.92,-0.02467
+46,s4,LPT outlet temperature,-0.6,1413.17,1403.23,0.40273
+47,s4,LPT outlet temperature,-9.3,1402.79,1403.23,0.11333
+47,s8,physical fan speed,-7.8,2388.16,2388.06,0.00152
+47,s21,LPT coolant bleed,5.4,23.2595,23.3511,0.00585
+47,s9,physical core speed,-5.0,9038.32,9058.2,-1.06648
+47,s20,HPT coolant bleed,-4.6,38.79,38.92,0.00388
+47,s7,HPC outlet pressure,3.9,553.05,553.9,0.02521
+47,cycle,operating age (cycles run),3.8,73.0,64.0,
+47,s13,corrected fan speed,3.6,2388.14,2388.06,0.0023
+47,s11,HPC outlet static pressure,3.5,47.44,47.37,-0.03836
+47,s14,corrected core speed,-1.4,8125.57,8139.37,0.48448
+47,s2,LPC outlet temperature,1.3,642.73,642.41,-0.00679
+47,s12,fuel flow to static pressure ratio,1.0,521.29,521.87,-0.04442
+47,s15,bypass ratio,-0.9,8.4586,8.4201,-0.00044
+47,s17,bleed enthalpy,0.7,392.0,392.0,-0.07273
+47,s3,HPC outlet temperature,0.0,1587.09,1587.43,-0.23988
+48,s4,LPT outlet temperature,-10.0,1402.73,1403.23,-0.46867
+48,cycle,operating age (cycles run),8.8,78.0,64.0,
+48,s8,physical fan speed,7.4,2388.1,2388.06,-0.00139
+48,s20,HPT coolant bleed,-6.9,38.8,38.92,-0.00733
+48,s13,corrected fan speed,4.5,2388.15,2388.06,0.00612
+48,s3,HPC outlet temperature,-3.8,1591.34,1587.43,0.49788
+48,s11,HPC outlet static pressure,2.4,47.7,47.37,0.01903
+48,s14,corrected core speed,2.2,8137.24,8139.37,0.47855
+48,s12,fuel flow to static pressure ratio,1.9,522.03,521.87,0.0357
+48,s15,bypass ratio,1.8,8.4515,8.4201,-0.00064
+48,s7,HPC outlet pressure,0.6,553.83,553.9,-0.01388
+48,s21,LPT coolant bleed,0.5,23.3238,23.3511,-0.00508
+48,s2,LPC outlet temperature,0.4,642.77,642.41,0.01521
+48,s9,physical core speed,0.0,9054.14,9058.2,0.57745
+48,s17,bleed enthalpy,-0.0,393.0,392.0,-0.03636
+49,s2,LPC outlet temperature,24.5,643.21,642.41,0.00582
+49,s4,LPT outlet temperature,16.4,1425.3,1403.23,0.42739
+49,s11,HPC outlet static pressure,16.4,48.01,47.37,0.00055
+49,s15,bypass ratio,14.8,8.5168,8.4201,0.00036
+49,s3,HPC outlet temperature,10.5,1607.55,1587.43,0.69618
+49,s7,HPC outlet pressure,6.9,552.0,553.9,-0.00552
+49,s20,HPT coolant bleed,-6.8,38.56,38.92,0.00673
+49,s9,physical core speed,5.6,9052.48,9058.2,0.33673
+49,s12,fuel flow to static pressure ratio,4.1,520.27,521.87,0.04303
+49,s13,corrected fan speed,3.1,2388.22,2388.06,-0.00352
+49,s21,LPT coolant bleed,2.1,23.1167,23.3511,-0.00506
+49,s17,bleed enthalpy,1.8,396.0,392.0,0.09091
+49,s14,corrected core speed,1.6,8132.46,8139.37,-0.16503
+49,s8,physical fan speed,-0.4,2388.21,2388.06,0.00455
+49,cycle,operating age (cycles run),0.1,303.0,64.0,
+50,s14,corrected core speed,16.2,8142.07,8139.37,0.32479
+50,cycle,operating age (cycles run),6.7,74.0,64.0,
+50,s13,corrected fan speed,6.1,2388.06,2388.06,0.00091
+50,s3,HPC outlet temperature,-1.9,1582.59,1587.43,-0.24279
+50,s15,bypass ratio,-1.8,8.4719,8.4201,0.00462
+50,s8,physical fan speed,-1.7,2388.05,2388.06,-0.00158
+50,s12,fuel flow to static pressure ratio,1.5,521.91,521.87,0.03115
+50,s11,HPC outlet static pressure,-1.2,47.5,47.37,0.02267
+50,s7,HPC outlet pressure,-1.1,553.18,553.9,-0.01861
+50,s2,LPC outlet temperature,-0.9,642.66,642.41,-0.00648
+50,s9,physical core speed,-0.7,9066.84,9058.2,0.47485
+50,s20,HPT coolant bleed,-0.7,38.98,38.92,0.00558
+50,s17,bleed enthalpy,0.5,393.0,392.0,0.0
+50,s21,LPT coolant bleed,0.3,23.291,23.3511,-0.00533
+50,s4,LPT outlet temperature,0.0,1397.65,1403.23,0.00273
+51,cycle,operating age (cycles run),25.8,144.0,64.0,
+51,s4,LPT outlet temperature,-13.2,1406.6,1403.23,-0.39527
+51,s8,physical fan speed,9.1,2388.1,2388.06,0.00588
+51,s20,HPT coolant bleed,-8.6,38.77,38.92,0.00206
+51,s14,corrected core speed,8.0,8127.61,8139.37,-0.428
+51,s3,HPC outlet temperature,-5.9,1585.08,1587.43,0.38121
+51,s7,HPC outlet pressure,5.2,553.58,553.9,-0.01436
+51,s11,HPC outlet static pressure,4.3,47.5,47.37,-0.01715
+51,s13,corrected fan speed,3.6,2388.12,2388.06,-0.00303
+51,s21,LPT coolant bleed,3.2,23.3108,23.3511,0.00297
+51,s2,LPC outlet temperature,2.8,642.56,642.41,0.00885
+51,s12,fuel flow to static pressure ratio,-1.9,521.25,521.87,0.02903
+51,s9,physical core speed,-1.5,9053.37,9058.2,1.22321
+51,s17,bleed enthalpy,-0.9,394.0,392.0,0.09091
+51,s15,bypass ratio,0.6,8.4577,8.4201,0.00363
+52,cycle,operating age (cycles run),51.4,189.0,64.0,
+52,s14,corrected core speed,18.7,8192.02,8139.37,2.18727
+52,s15,bypass ratio,12.0,8.4645,8.4201,-0.00262
+52,s3,HPC outlet temperature,6.6,1600.96,1587.43,-0.01836
+52,s9,physical core speed,6.2,9122.6,9058.2,2.11509
+52,s2,LPC outlet temperature,6.1,643.15,642.41,0.05091
+52,s11,HPC outlet static pressure,5.5,47.55,47.37,0.00964
+52,s13,corrected fan speed,2.8,2388.07,2388.06,-0.00024
+52,s7,HPC outlet pressure,2.7,553.19,553.9,0.01267
+52,s17,bleed enthalpy,2.7,395.0,392.0,0.04242
+52,s8,physical fan speed,2.3,2388.11,2388.06,0.00745
+52,s12,fuel flow to static pressure ratio,-1.0,521.27,521.87,0.00194
+52,s21,LPT coolant bleed,-0.8,23.211,23.3511,-0.00909
+52,s4,LPT outlet temperature,0.6,1412.05,1403.23,0.0023
+52,s20,HPT coolant bleed,-0.1,38.66,38.92,-0.01261
+53,cycle,operating age (cycles run),16.6,164.0,64.0,
+53,s14,corrected core speed,13.5,8180.97,8139.37,0.63642
+53,s2,LPC outlet temperature,7.1,642.87,642.41,-0.01279
+53,s11,HPC outlet static pressure,6.6,47.75,47.37,0.0137
+53,s9,physical core speed,4.6,9102.33,9058.2,1.1277
+53,s3,HPC outlet temperature,3.0,1602.76,1587.43,-0.09012
+53,s15,bypass ratio,2.3,8.4702,8.4201,0.00272
+53,s13,corrected fan speed,1.6,2388.05,2388.06,-0.00485
+53,s7,HPC outlet pressure,-1.5,553.09,553.9,-0.00321
+53,s21,LPT coolant bleed,1.4,23.1671,23.3511,0.00105
+53,s8,physical fan speed,-0.6,2388.08,2388.06,-0.00624
+53,s17,bleed enthalpy,-0.4,394.0,392.0,-0.07273
+53,s20,HPT coolant bleed,-0.3,38.64,38.92,-0.00745
+53,s4,LPT outlet temperature,0.2,1418.18,1403.23,-0.00879
+53,s12,fuel flow to static pressure ratio,-0.1,520.98,521.87,-0.09321
+54,s17,bleed enthalpy,-8.8,392.0,392.0,0.01818
+54,s14,corrected core speed,7.4,8143.64,8139.37,0.41273
+54,s7,HPC outlet pressure,-5.4,555.07,553.9,0.00648
+54,s8,physical fan speed,-4.1,2388.05,2388.06,0.00309
+54,s20,HPT coolant bleed,-2.7,38.95,38.92,0.00509
+54,cycle,operating age (cycles run),2.5,121.0,64.0,
+54,s9,physical core speed,-2.5,9064.43,9058.2,0.35509
+54,s13,corrected fan speed,2.0,2387.97,2388.06,-0.00345
+54,s15,bypass ratio,-2.0,8.3926,8.4201,0.0002
+54,s2,LPC outlet temperature,1.8,642.43,642.41,0.02945
+54,s21,LPT coolant bleed,-1.7,23.4385,23.3511,0.01165
+54,s12,fuel flow to static pressure ratio,-1.4,522.28,521.87,-0.03152
+54,s11,HPC outlet static pressure,-1.3,47.34,47.37,0.00539
+54,s3,HPC outlet temperature,0.6,1580.89,1587.43,-0.4303
+54,s4,LPT outlet temperature,-0.2,1399.84,1403.23,0.53861
+55,cycle,operating age (cycles run),10.9,113.0,64.0,
+55,s2,LPC outlet temperature,6.1,642.2,642.41,0.02545
+55,s8,physical fan speed,4.1,2388.09,2388.06,-0.0003
+55,s15,bypass ratio,3.4,8.4276,8.4201,-0.00045
+55,s4,LPT outlet temperature,-2.5,1399.63,1403.23,0.19121
+55,s3,HPC outlet temperature,-1.8,1585.68,1587.43,0.18624
+55,s21,LPT coolant bleed,1.7,23.3438,23.3511,-0.00626
+55,s9,physical core speed,1.3,9056.16,9058.2,0.14345
+55,s17,bleed enthalpy,-1.3,393.0,392.0,0.13939
+55,s11,HPC outlet static pressure,-1.0,47.5,47.37,0.0157
+55,s14,corrected core speed,0.5,8135.62,8139.37,-0.00333
+55,s13,corrected fan speed,0.4,2388.04,2388.06,0.00164
+55,s20,HPT coolant bleed,0.4,38.93,38.92,0.00642
+55,s7,HPC outlet pressure,-0.2,553.37,553.9,-0.05594
+55,s12,fuel flow to static pressure ratio,0.1,521.92,521.87,0.03976
+56,s2,LPC outlet temperature,22.2,643.32,642.41,-0.02964
+56,s11,HPC outlet static pressure,19.9,48.02,47.37,-0.00248
+56,s3,HPC outlet temperature,16.7,1598.6,1587.43,0.13097
+56,s4,LPT outlet temperature,13.5,1416.85,1403.23,0.17655
+56,s15,bypass ratio,12.7,8.5235,8.4201,0.0012
+56,s20,HPT coolant bleed,-7.4,38.51,38.92,-0.02345
+56,s17,bleed enthalpy,6.4,395.0,392.0,0.04242
+56,s7,HPC outlet pressure,5.6,551.45,553.9,-0.01794
+56,s21,LPT coolant bleed,5.1,23.1772,23.3511,-0.0014
+56,s13,corrected fan speed,4.5,2388.23,2388.06,0.00079
+56,s8,physical fan speed,-4.3,2388.23,2388.06,0.00327
+56,s14,corrected core speed,-2.0,8116.7,8139.37,-0.16236
+56,s9,physical core speed,1.2,9035.55,9058.2,-0.1243
+56,s12,fuel flow to static pressure ratio,1.2,520.0,521.87,-0.05236
+56,cycle,operating age (cycles run),0.4,136.0,64.0,
+57,cycle,operating age (cycles run),14.3,160.0,64.0,
+57,s4,LPT outlet temperature,-13.9,1411.95,1403.23,0.63073
+57,s13,corrected fan speed,9.7,2388.19,2388.06,0.00648
+57,s8,physical fan speed,-6.7,2388.11,2388.06,-0.00212
+57,s3,HPC outlet temperature,-5.3,1590.38,1587.43,-0.64915
+57,s15,bypass ratio,5.1,8.4603,8.4201,0.00501
+57,s2,LPC outlet temperature,5.0,642.17,642.41,-0.01255
+57,s14,corrected core speed,4.5,8131.76,8139.37,-0.26636
+57,s17,bleed enthalpy,3.8,394.0,392.0,0.15152
+57,s9,physical core speed,-3.0,9043.8,9058.2,-0.27988
+57,s7,HPC outlet pressure,-2.5,552.43,553.9,-0.01455
+57,s12,fuel flow to static pressure ratio,-2.3,521.61,521.87,-0.00806
+57,s11,HPC outlet static pressure,2.2,47.59,47.37,-0.00255
+57,s21,LPT coolant bleed,-0.9,23.291,23.3511,-0.00332
+57,s20,HPT coolant bleed,-0.4,38.77,38.92,-0.01673
+58,s2,LPC outlet temperature,18.9,643.01,642.41,0.02485
+58,cycle,operating age (cycles run),12.2,176.0,64.0,
+58,s3,HPC outlet temperature,12.1,1596.72,1587.43,-0.21448
+58,s15,bypass ratio,7.9,8.497,8.4201,0.00043
+58,s12,fuel flow to static pressure ratio,-7.2,521.2,521.87,0.01667
+58,s7,HPC outlet pressure,6.4,553.07,553.9,0.03558
+58,s4,LPT outlet temperature,4.8,1418.42,1403.23,0.47236
+58,s20,HPT coolant bleed,-4.4,38.46,38.92,-0.01103
+58,s8,physical fan speed,3.9,2388.24,2388.06,0.01091
+58,s11,HPC outlet static pressure,2.6,47.78,47.37,0.00012
+58,s21,LPT coolant bleed,-2.4,23.1747,23.3511,-0.00156
+58,s13,corrected fan speed,-0.6,2388.2,2388.06,0.00412
+58,s17,bleed enthalpy,0.4,392.0,392.0,-0.00606
+58,s9,physical core speed,-0.2,9058.12,9058.2,0.24255
+58,s14,corrected core speed,0.0,8128.82,8139.37,-0.46424
+59,s17,bleed enthalpy,-9.0,390.0,392.0,-0.1697
+59,s13,corrected fan speed,6.7,2388.05,2388.06,0.00091
+59,cycle,operating age (cycles run),5.8,94.0,64.0,
+59,s15,bypass ratio,4.5,8.4267,8.4201,0.00127
+59,s7,HPC outlet pressure,-3.5,553.72,553.9,-0.04812
+59,s21,LPT coolant bleed,-3.4,23.4337,23.3511,-0.00121
+59,s2,LPC outlet temperature,3.0,642.18,642.41,0.01697
+59,s9,physical core speed,-2.5,9055.0,9058.2,-0.33655
+59,s12,fuel flow to static pressure ratio,2.1,521.78,521.87,-0.08345
+59,s11,HPC outlet static pressure,-1.8,47.08,47.37,-0.01582
+59,s3,HPC outlet temperature,1.7,1584.24,1587.43,0.49085
+59,s8,physical fan speed,-1.0,2388.0,2388.06,-0.0003
+59,s14,corrected core speed,0.7,8140.39,8139.37,0.15036
+59,s20,HPT coolant bleed,0.6,38.92,38.92,0.00242
+59,s4,LPT outlet temperature,-0.2,1401.21,1403.23,0.28345
+60,cycle,operating age (cycles run),13.6,147.0,64.0,
+60,s4,LPT outlet temperature,-10.7,1402.77,1403.23,-0.2997
+60,s3,HPC outlet temperature,-7.0,1592.46,1587.43,0.61848
+60,s15,bypass ratio,-6.7,8.4484,8.4201,-8e-05
+60,s2,LPC outlet temperature,5.7,642.86,642.41,-0.01903
+60,s7,HPC outlet pressure,-4.4,553.31,553.9,-0.00958
+60,s20,HPT coolant bleed,-4.2,38.87,38.92,0.00182
+60,s11,HPC outlet static pressure,4.0,47.53,47.37,0.0097
+60,s17,bleed enthalpy,4.0,394.0,392.0,0.09091
+60,s14,corrected core speed,3.8,8136.13,8139.37,0.30079
+60,s8,physical fan speed,-2.7,2388.12,2388.06,-0.004
+60,s9,physical core speed,-1.3,9054.22,9058.2,0.31727
+60,s13,corrected fan speed,-1.3,2388.07,2388.06,-0.00188
+60,s21,LPT coolant bleed,0.8,23.2971,23.3511,0.00992
+60,s12,fuel flow to static pressure ratio,0.2,521.66,521.87,-0.02545
+61,s2,LPC outlet temperature,18.0,643.29,642.41,0.01273
+61,s3,HPC outlet temperature,13.4,1603.16,1587.43,0.76145
+61,s15,bypass ratio,9.5,8.4725,8.4201,0.00197
+61,s7,HPC outlet pressure,7.9,552.74,553.9,-0.05673
+61,s13,corrected fan speed,5.8,2388.17,2388.06,0.00855
+61,s11,HPC outlet static pressure,5.5,47.81,47.37,0.00418
+61,s17,bleed enthalpy,-5.4,395.0,392.0,-0.00606
+61,cycle,operating age (cycles run),5.1,159.0,64.0,
+61,s8,physical fan speed,3.9,2388.16,2388.06,0.00139
+61,s9,physical core speed,-2.8,9065.79,9058.2,-0.56279
+61,s21,LPT coolant bleed,2.0,23.1314,23.3511,-0.00817
+61,s20,HPT coolant bleed,-1.6,38.64,38.92,-0.01255
+61,s4,LPT outlet temperature,-1.4,1414.17,1403.23,0.55218
+61,s12,fuel flow to static pressure ratio,1.4,520.97,521.87,-0.01873
+61,s14,corrected core speed,0.5,8147.51,8139.37,0.22297
+62,cycle,operating age (cycles run),42.2,232.0,64.0,
+62,s9,physical core speed,23.4,9096.2,9058.2,0.74921
+62,s14,corrected core speed,15.9,8162.08,8139.37,0.66897
+62,s3,HPC outlet temperature,13.3,1594.78,1587.43,0.79836
+62,s15,bypass ratio,8.4,8.4622,8.4201,0.00157
+62,s2,LPC outlet temperature,5.3,642.83,642.41,-0.03006
+62,s11,HPC outlet static pressure,4.5,47.52,47.37,0.00467
+62,s20,HPT coolant bleed,3.5,38.75,38.92,-0.00115
+62,s7,HPC outlet pressure,-3.3,553.81,553.9,0.00218
+62,s13,corrected fan speed,3.0,2388.06,2388.06,0.00018
+62,s17,bleed enthalpy,2.9,394.0,392.0,0.13333
+62,s4,LPT outlet temperature,2.0,1407.86,1403.23,-0.09745
+62,s8,physical fan speed,1.5,2388.03,2388.06,0.00224
+62,s21,LPT coolant bleed,1.3,23.2719,23.3511,-0.01617
+62,s12,fuel flow to static pressure ratio,-1.0,521.2,521.87,-0.03376
+63,cycle,operating age (cycles run),32.9,155.0,64.0,
+63,s15,bypass ratio,12.7,8.4704,8.4201,0.0041
+63,s4,LPT outlet temperature,-12.4,1412.74,1403.23,-0.30612
+63,s8,physical fan speed,-10.9,2388.19,2388.06,-0.00418
+63,s7,HPC outlet pressure,10.6,552.8,553.9,-0.10503
+63,s20,HPT coolant bleed,-8.2,38.8,38.92,-0.0117
+63,s12,fuel flow to static pressure ratio,-6.8,521.17,521.87,-0.00352
+63,s2,LPC outlet temperature,5.8,643.26,642.41,0.04182
+63,s21,LPT coolant bleed,-3.5,23.2344,23.3511,0.00645
+63,s17,bleed enthalpy,-2.7,393.0,392.0,0.09091
+63,s3,HPC outlet temperature,2.1,1592.19,1587.43,0.25939
+63,s9,physical core speed,-1.8,9052.57,9058.2,0.82952
+63,s11,HPC outlet static pressure,1.4,47.79,47.37,0.01515
+63,s14,corrected core speed,-0.8,8131.3,8139.37,0.07048
+63,s13,corrected fan speed,-0.3,2388.17,2388.06,0.00152
+64,s2,LPC outlet temperature,22.8,643.01,642.41,0.02406
+64,s3,HPC outlet temperature,14.8,1597.94,1587.43,0.10291
+64,s15,bypass ratio,9.1,8.4665,8.4201,-0.0017
+64,s20,HPT coolant bleed,-8.6,38.61,38.92,0.00133
+64,s13,corrected fan speed,7.3,2388.13,2388.06,-0.00242
+64,s11,HPC outlet static pressure,5.7,47.73,47.37,-0.006
+64,s12,fuel flow to static pressure ratio,3.9,520.97,521.87,-0.03455
+64,s4,LPT outlet temperature,3.4,1417.14,1403.23,0.50406
+64,s7,HPC outlet pressure,3.0,552.05,553.9,-0.02848
+64,s17,bleed enthalpy,-2.8,394.0,392.0,-0.00606
+64,s14,corrected core speed,1.8,8133.0,8139.37,0.25612
+64,s21,LPT coolant bleed,1.7,23.167,23.3511,-0.01486
+64,cycle,operating age (cycles run),1.6,168.0,64.0,
+64,s9,physical core speed,1.5,9056.25,9058.2,-0.4243
+64,s8,physical fan speed,-0.8,2388.22,2388.06,0.00636
+65,s20,HPT coolant bleed,-4.9,39.19,38.92,-0.01327
+65,s17,bleed enthalpy,-3.7,392.0,392.0,-0.04848
+65,s7,HPC outlet pressure,-3.0,554.39,553.9,-0.00618
+65,s9,physical core speed,-2.1,9063.17,9058.2,-0.43018
+65,s4,LPT outlet temperature,-1.7,1398.17,1403.23,0.90939
+65,s8,physical fan speed,-1.4,2388.03,2388.06,-0.00297
+65,s14,corrected core speed,-1.1,8153.06,8139.37,0.69752
+65,s11,HPC outlet static pressure,-0.7,47.1,47.37,-0.00291
+65,s12,fuel flow to static pressure ratio,-0.6,522.65,521.87,0.02879
+65,s13,corrected fan speed,0.6,2388.03,2388.06,-0.00042
+65,s21,LPT coolant bleed,0.5,23.327,23.3511,-0.0041
+65,cycle,operating age (cycles run),-0.2,71.0,64.0,
+65,s3,HPC outlet temperature,-0.2,1588.1,1587.43,-0.14721
+65,s15,bypass ratio,0.2,8.424,8.4201,0.00177
+65,s2,LPC outlet temperature,0.1,641.75,642.41,-0.05182
+66,s2,LPC outlet temperature,11.3,643.34,642.41,-0.00139
+66,s3,HPC outlet temperature,11.1,1599.38,1587.43,0.74364
+66,s14,corrected core speed,7.8,8197.69,8139.37,1.65861
+66,s11,HPC outlet static pressure,6.7,47.92,47.37,0.01188
+66,s20,HPT coolant bleed,-5.8,38.61,38.92,-0.01442
+66,s4,LPT outlet temperature,5.1,1422.98,1403.23,0.518
+66,s15,bypass ratio,5.0,8.4838,8.4201,-0.00112
+66,s17,bleed enthalpy,3.6,396.0,392.0,-0.02424
+66,s9,physical core speed,1.2,9122.3,9058.2,1.84424
+66,s21,LPT coolant bleed,1.1,23.0669,23.3511,-0.0131
+66,s12,fuel flow to static pressure ratio,-1.0,520.75,521.87,-0.01624
+66,s8,physical fan speed,-0.5,2388.09,2388.06,-0.00545
+66,s7,HPC outlet pressure,0.3,552.06,553.9,-0.07194
+66,cycle,operating age (cycles run),0.1,147.0,64.0,
+66,s13,corrected fan speed,0.1,2388.11,2388.06,-0.00297
+67,s13,corrected fan speed,5.1,2388.11,2388.06,0.00152
+67,cycle,operating age (cycles run),3.4,71.0,64.0,
+67,s14,corrected core speed,2.9,8141.98,8139.37,-0.50036
+67,s7,HPC outlet pressure,2.0,554.52,553.9,0.03691
+67,s12,fuel flow to static pressure ratio,2.0,521.75,521.87,0.02236
+67,s8,physical fan speed,1.4,2388.12,2388.06,0.00291
+67,s3,HPC outlet temperature,-1.1,1593.86,1587.43,0.32291
+67,s21,LPT coolant bleed,1.1,23.2914,23.3511,-0.00661
+67,s4,LPT outlet temperature,0.8,1409.97,1403.23,0.39364
+67,s15,bypass ratio,-0.5,8.3732,8.4201,-0.00236
+67,s20,HPT coolant bleed,-0.5,38.78,38.92,-0.01321
+67,s2,LPC outlet temperature,-0.2,642.39,642.41,0.02764
+67,s17,bleed enthalpy,-0.2,392.0,392.0,-0.03636
+67,s9,physical core speed,0.0,9046.26,9058.2,-0.45315
+67,s11,HPC outlet static pressure,-0.0,47.27,47.37,-0.00558
+68,s2,LPC outlet temperature,22.3,643.21,642.41,0.02782
+68,s11,HPC outlet static pressure,20.5,48.04,47.37,0.01036
+68,s3,HPC outlet temperature,17.9,1602.07,1587.43,0.37133
+68,s4,LPT outlet temperature,17.8,1427.25,1403.23,0.394
+68,s15,bypass ratio,12.9,8.4867,8.4201,0.00345
+68,s20,HPT coolant bleed,-5.4,38.63,38.92,-0.00636
+68,s7,HPC outlet pressure,5.0,552.0,553.9,-0.08503
+68,cycle,operating age (cycles run),-3.1,187.0,64.0,
+68,s13,corrected fan speed,2.2,2388.22,2388.06,0.00188
+68,s9,physical core speed,-1.8,9086.59,9058.2,0.88297
+68,s21,LPT coolant bleed,1.4,23.1989,23.3511,0.00352
+68,s8,physical fan speed,-1.3,2388.2,2388.06,0.00345
+68,s12,fuel flow to static pressure ratio,0.7,520.47,521.87,-0.00915
+68,s17,bleed enthalpy,0.7,396.0,392.0,0.1697
+68,s14,corrected core speed,-0.1,8160.32,8139.37,0.62121
+69,s4,LPT outlet temperature,-7.1,1403.96,1403.23,0.31133
+69,cycle,operating age (cycles run),-3.5,54.0,64.0,
+69,s14,corrected core speed,-3.4,8128.39,8139.37,0.25842
+69,s13,corrected fan speed,-2.0,2388.16,2388.06,0.00067
+69,s9,physical core speed,-1.9,9048.62,9058.2,-0.23848
+69,s21,LPT coolant bleed,1.6,23.1958,23.3511,-0.00294
+69,s7,HPC outlet pressure,-0.8,553.66,553.9,0.02242
+69,s17,bleed enthalpy,-0.8,393.0,392.0,-0.15758
+69,s11,HPC outlet static pressure,0.7,47.37,47.37,-0.00455
+69,s20,HPT coolant bleed,-0.6,38.95,38.92,0.01885
+69,s8,physical fan speed,0.4,2388.12,2388.06,0.00279
+69,s12,fuel flow to static pressure ratio,-0.4,521.84,521.87,0.03836
+69,s3,HPC outlet temperature,0.3,1593.68,1587.43,0.78382
+69,s2,LPC outlet temperature,-0.0,642.31,642.41,-0.02297
+69,s15,bypass ratio,0.0,8.4387,8.4201,0.00021
+70,cycle,operating age (cycles run),17.3,152.0,64.0,
+70,s4,LPT outlet temperature,-16.4,1406.49,1403.23,-0.46206
+70,s11,HPC outlet static pressure,4.7,47.67,47.37,0.00067
+70,s2,LPC outlet temperature,4.4,642.71,642.41,0.01309
+70,s14,corrected core speed,4.2,8133.88,8139.37,0.54261
+70,s8,physical fan speed,-3.7,2388.1,2388.06,-0.00291
+70,s21,LPT coolant bleed,2.3,23.2231,23.3511,-0.00595
+70,s20,HPT coolant bleed,-1.6,38.85,38.92,0.00552
+70,s17,bleed enthalpy,-1.5,394.0,392.0,-0.03636
+70,s12,fuel flow to static pressure ratio,-1.3,521.65,521.87,0.01558
+70,s9,physical core speed,1.1,9054.84,9058.2,0.64727
+70,s3,HPC outlet temperature,-0.8,1588.56,1587.43,-0.16067
+70,s7,HPC outlet pressure,-0.7,553.01,553.9,-0.02733
+70,s13,corrected fan speed,-0.5,2388.11,2388.06,0.00552
+70,s15,bypass ratio,-0.1,8.4349,8.4201,0.00121
+71,s13,corrected fan speed,3.5,2388.08,2388.06,0.00261
+71,s12,fuel flow to static pressure ratio,-3.3,522.42,521.87,0.03406
+71,s3,HPC outlet temperature,-2.3,1585.45,1587.43,-1.13467
+71,cycle,operating age (cycles run),1.5,68.0,64.0,
+71,s17,bleed enthalpy,-1.3,391.0,392.0,0.04242
+71,s14,corrected core speed,-1.1,8146.19,8139.37,0.01685
+71,s8,physical fan speed,-0.9,2388.01,2388.06,0.00218
+71,s20,HPT coolant bleed,-0.9,38.93,38.92,-0.00994
+71,s7,HPC outlet pressure,-0.8,553.17,553.9,0.03285
+71,s21,LPT coolant bleed,0.7,23.3188,23.3511,-0.02097
+71,s4,LPT outlet temperature,-0.6,1400.97,1403.23,-0.31703
+71,s11,HPC outlet static pressure,0.3,47.35,47.37,0.0143
+71,s9,physical core speed,-0.2,9068.53,9058.2,-0.23842
+71,s15,bypass ratio,0.2,8.4386,8.4201,-0.00119
+71,s2,LPC outlet temperature,0.0,642.52,642.41,-0.026
+72,cycle,operating age (cycles run),31.1,131.0,64.0,
+72,s11,HPC outlet static pressure,8.0,47.69,47.37,0.02352
+72,s8,physical fan speed,6.9,2388.11,2388.06,0.00667
+72,s20,HPT coolant bleed,-6.1,38.91,38.92,0.00588
+72,s2,LPC outlet temperature,5.8,642.9,642.41,0.01315
+72,s3,HPC outlet temperature,-4.8,1588.49,1587.43,-0.36673
+72,s4,LPT outlet temperature,-3.4,1410.57,1403.23,0.80212
+72,s15,bypass ratio,3.1,8.445,8.4201,0.00056
+72,s12,fuel flow to static pressure ratio,3.0,521.47,521.87,0.00115
+72,s9,physical core speed,2.8,9072.03,9058.2,0.03612
+72,s13,corrected fan speed,1.7,2388.09,2388.06,0.00248
+72,s17,bleed enthalpy,-1.1,394.0,392.0,-0.00606
+72,s21,LPT coolant bleed,1.1,23.2905,23.3511,-0.00045
+72,s14,corrected core speed,0.7,8149.27,8139.37,0.43176
+72,s7,HPC outlet pressure,-0.1,553.52,553.9,-0.08055
+73,cycle,operating age (cycles run),13.4,112.0,64.0,
+73,s2,LPC outlet temperature,6.2,642.27,642.41,0.02739
+73,s12,fuel flow to static pressure ratio,3.4,522.02,521.87,-0.04842
+73,s13,corrected fan speed,2.8,2388.05,2388.06,0.00309
+73,s21,LPT coolant bleed,2.7,23.3074,23.3511,-0.00192
+73,s15,bypass ratio,2.3,8.4317,8.4201,0.00268
+73,s7,HPC outlet pressure,-1.7,554.41,553.9,-0.02824
+73,s14,corrected core speed,1.6,8136.87,8139.37,-0.25388
+73,s11,HPC outlet static pressure,-1.3,47.25,47.37,0.00442
+73,s20,HPT coolant bleed,-0.9,38.95,38.92,-0.01327
+73,s9,physical core speed,-0.8,9051.39,9058.2,0.1417
+73,s8,physical fan speed,0.7,2388.08,2388.06,0.0023
+73,s3,HPC outlet temperature,-0.4,1576.93,1587.43,-0.77958
+73,s4,LPT outlet temperature,-0.1,1398.62,1403.23,0.04315
+73,s17,bleed enthalpy,0.0,393.0,392.0,0.00606
+74,cycle,operating age (cycles run),17.0,137.0,64.0,
+74,s2,LPC outlet temperature,13.2,642.61,642.41,0.05836
+74,s8,physical fan speed,9.1,2388.1,2388.06,-0.00085
+74,s12,fuel flow to static pressure ratio,7.9,521.39,521.87,-0.03509
+74,s4,LPT outlet temperature,-6.6,1406.15,1403.23,0.2363
+74,s3,HPC outlet temperature,-5.7,1595.16,1587.43,0.89836
+74,s11,HPC outlet static pressure,5.1,47.54,47.37,0.00618
+74,s7,HPC outlet pressure,4.5,552.44,553.9,0.02958
+74,s20,HPT coolant bleed,-4.5,38.79,38.92,0.00036
+74,s13,corrected fan speed,-1.7,2388.07,2388.06,0.00067
+74,s15,bypass ratio,1.2,8.4362,8.4201,0.00324
+74,s9,physical core speed,-1.1,9063.35,9058.2,-0.44952
+74,s14,corrected core speed,1.0,8139.59,8139.37,-0.60091
+74,s21,LPT coolant bleed,1.0,23.201,23.3511,-0.00774
+74,s17,bleed enthalpy,-0.3,392.0,392.0,-0.07879
+75,cycle,operating age (cycles run),12.0,88.0,64.0,
+75,s7,HPC outlet pressure,5.1,554.11,553.9,-0.01067
+75,s8,physical fan speed,5.1,2388.12,2388.06,0.00715
+75,s4,LPT outlet temperature,2.9,1403.3,1403.23,-0.87279
+75,s15,bypass ratio,2.3,8.4316,8.4201,-0.00039
+75,s14,corrected core speed,2.0,8132.14,8139.37,-0.59224
+75,s12,fuel flow to static pressure ratio,-1.9,521.52,521.87,-0.01073
+75,s17,bleed enthalpy,-1.0,392.0,392.0,0.09091
+75,s20,HPT coolant bleed,0.9,38.98,38.92,-0.0037
+75,s11,HPC outlet static pressure,-0.5,47.4,47.37,0.01976
+75,s13,corrected fan speed,0.5,2388.1,2388.06,0.00618
+75,s2,LPC outlet temperature,-0.4,642.13,642.41,-0.048
+75,s3,HPC outlet temperature,0.3,1594.47,1587.43,0.29218
+75,s9,physical core speed,0.1,9051.28,9058.2,-0.73745
+75,s21,LPT coolant bleed,-0.1,23.4919,23.3511,0.00295
+76,s2,LPC outlet temperature,23.7,643.14,642.41,0.05309
+76,s11,HPC outlet static pressure,15.1,48.04,47.37,0.02709
+76,s4,LPT outlet temperature,13.9,1420.07,1403.23,0.38891
+76,s3,HPC outlet temperature,12.0,1603.48,1587.43,0.13103
+76,s15,bypass ratio,7.8,8.5125,8.4201,0.00179
+76,s21,LPT coolant bleed,4.5,23.0737,23.3511,-0.01276
+76,cycle,operating age (cycles run),-3.6,205.0,64.0,
+76,s20,HPT coolant bleed,-3.0,38.46,38.92,-0.01352
+76,s17,bleed enthalpy,2.0,395.0,392.0,-0.06061
+76,s14,corrected core speed,1.4,8182.45,8139.37,1.22855
+76,s13,corrected fan speed,1.3,2388.14,2388.06,0.00145
+76,s7,HPC outlet pressure,1.0,551.82,553.9,-0.03309
+76,s8,physical fan speed,0.6,2388.18,2388.06,0.00103
+76,s9,physical core speed,0.2,9114.99,9058.2,0.73103
+76,s12,fuel flow to static pressure ratio,-0.2,520.19,521.87,-0.05848
+77,cycle,operating age (cycles run),17.0,162.0,64.0,
+77,s2,LPC outlet temperature,12.9,642.79,642.41,0.01345
+77,s20,HPT coolant bleed,-8.8,38.75,38.92,0.0077
+77,s21,LPT coolant bleed,8.5,23.1712,23.3511,-0.01258
+77,s15,bypass ratio,7.4,8.4543,8.4201,0.00021
+77,s4,LPT outlet temperature,-7.2,1418.62,1403.23,0.0837
+77,s7,HPC outlet pressure,5.2,552.24,553.9,-0.12048
+77,s3,HPC outlet temperature,4.1,1593.81,1587.43,0.25703
+77,s12,fuel flow to static pressure ratio,3.8,520.16,521.87,-0.05115
+77,s14,corrected core speed,-3.3,8128.16,8139.37,-0.29267
+77,s13,corrected fan speed,2.6,2388.21,2388.06,0.00206
+77,s11,HPC outlet static pressure,1.8,47.81,47.37,0.01679
+77,s8,physical fan speed,1.2,2388.25,2388.06,0.00473
+77,s9,physical core speed,-1.0,9045.43,9058.2,-0.91697
+77,s17,bleed enthalpy,-0.8,396.0,392.0,0.26061
+78,s7,HPC outlet pressure,-4.1,554.93,553.9,0.05994
+78,s11,HPC outlet static pressure,-4.0,47.2,47.37,-0.0143
+78,s12,fuel flow to static pressure ratio,-3.9,522.51,521.87,0.01158
+78,s20,HPT coolant bleed,-3.2,39.0,38.92,0.00382
+78,s17,bleed enthalpy,-2.7,391.0,392.0,-0.07273
+78,s8,physical fan speed,-1.8,2387.99,2388.06,-0.0
+78,s13,corrected fan speed,1.7,2387.96,2388.06,0.00048
+78,cycle,operating age (cycles run),1.0,72.0,64.0,
+78,s2,LPC outlet temperature,1.0,641.78,642.41,-0.00836
+78,s3,HPC outlet temperature,-0.6,1580.66,1587.43,0.19194
+78,s9,physical core speed,-0.6,9062.94,9058.2,-0.33273
+78,s21,LPT coolant bleed,-0.6,23.2748,23.3511,-0.00576
+78,s14,corrected core speed,-0.4,8148.46,8139.37,0.7283
+78,s15,bypass ratio,-0.3,8.3793,8.4201,-0.0017
+78,s4,LPT outlet temperature,0.2,1389.33,1403.23,-0.15448
+79,cycle,operating age (cycles run),26.2,101.0,64.0,
+79,s8,physical fan speed,15.2,2388.15,2388.06,0.00297
+79,s4,LPT outlet temperature,-8.8,1405.39,1403.23,0.29855
+79,s3,HPC outlet temperature,-6.9,1590.94,1587.43,-0.08182
+79,s11,HPC outlet static pressure,5.2,47.66,47.37,0.00055
+79,s13,corrected fan speed,4.8,2388.14,2388.06,-0.00291
+79,s15,bypass ratio,4.2,8.4516,8.4201,0.00279
+79,s2,LPC outlet temperature,3.5,642.43,642.41,-0.00606
+79,s21,LPT coolant bleed,3.3,23.287,23.3511,-0.00439
+79,s20,HPT coolant bleed,-2.0,38.72,38.92,0.00564
+79,s14,corrected core speed,1.3,8125.55,8139.37,-0.50497
+79,s12,fuel flow to static pressure ratio,1.1,521.55,521.87,-0.02291
+79,s9,physical core speed,-1.0,9040.39,9058.2,-0.15558
+79,s7,HPC outlet pressure,0.8,553.4,553.9,-0.01709
+79,s17,bleed enthalpy,0.1,393.0,392.0,-0.04848
+80,cycle,operating age (cycles run),32.2,133.0,64.0,
+80,s4,LPT outlet temperature,-14.0,1407.15,1403.23,0.13012
+80,s14,corrected core speed,10.6,8142.89,8139.37,-0.34479
+80,s2,LPC outlet temperature,6.9,642.64,642.41,0.00612
+80,s11,HPC outlet static pressure,6.2,47.57,47.37,0.00109
+80,s15,bypass ratio,6.2,8.4671,8.4201,0.00257
+80,s7,HPC outlet pressure,5.6,552.63,553.9,-0.05697
+80,s20,HPT coolant bleed,-5.4,38.69,38.92,-0.00509
+80,s8,physical fan speed,4.5,2388.11,2388.06,0.00533
+80,s9,physical core speed,2.5,9069.7,9058.2,0.46109
+80,s3,HPC outlet temperature,-1.8,1591.41,1587.43,0.05133
+80,s17,bleed enthalpy,-1.1,393.0,392.0,-0.01818
+80,s21,LPT coolant bleed,1.1,23.2813,23.3511,-0.00063
+80,s12,fuel flow to static pressure ratio,-0.8,521.05,521.87,-0.02764
+80,s13,corrected fan speed,0.7,2388.02,2388.06,-0.004
+81,s2,LPC outlet temperature,23.8,643.49,642.41,-0.01927
+81,s11,HPC outlet static pressure,23.3,48.11,47.37,0.01636
+81,s4,LPT outlet temperature,16.2,1427.83,1403.23,1.12273
+81,s3,HPC outlet temperature,14.8,1598.35,1587.43,-0.65867
+81,s15,bypass ratio,10.1,8.4987,8.4201,0.0033
+81,s21,LPT coolant bleed,6.4,23.1537,23.3511,-0.00438
+81,s7,HPC outlet pressure,5.9,551.53,553.9,-0.09788
+81,s12,fuel flow to static pressure ratio,5.7,519.67,521.87,-0.10145
+81,s20,HPT coolant bleed,-3.8,38.46,38.92,-0.02285
+81,cycle,operating age (cycles run),-3.0,213.0,64.0,
+81,s9,physical core speed,-2.6,9075.26,9058.2,-0.26782
+81,s13,corrected fan speed,2.0,2388.22,2388.06,0.00327
+81,s17,bleed enthalpy,0.6,397.0,392.0,0.16364
+81,s14,corrected core speed,0.4,8148.37,8139.37,-0.10327
+81,s8,physical fan speed,-0.2,2388.2,2388.06,0.00273
+82,s2,LPC outlet temperature,23.9,643.57,642.41,0.02091
+82,s11,HPC outlet static pressure,23.5,48.08,47.37,0.02982
+82,s3,HPC outlet temperature,14.9,1597.99,1587.43,0.54533
+82,s15,bypass ratio,12.0,8.5028,8.4201,0.00385
+82,s4,LPT outlet temperature,10.8,1427.69,1403.23,1.12061
+82,s20,HPT coolant bleed,-7.5,38.62,38.92,-0.0177
+82,s7,HPC outlet pressure,6.5,551.15,553.9,-0.04018
+82,s17,bleed enthalpy,5.1,397.0,392.0,0.08485
+82,s21,LPT coolant bleed,5.0,23.1211,23.3511,0.00191
+82,s12,fuel flow to static pressure ratio,3.8,520.02,521.87,-0.10479
+82,s13,corrected fan speed,3.7,2388.29,2388.06,0.0083
+82,s8,physical fan speed,-3.3,2388.2,2388.06,0.00267
+82,cycle,operating age (cycles run),1.0,162.0,64.0,
+82,s14,corrected core speed,0.7,8126.2,8139.37,-0.218
+82,s9,physical core speed,0.1,9058.64,9058.2,0.1217
+83,s11,HPC outlet static pressure,-2.7,47.2,47.37,-0.01036
+83,s4,LPT outlet temperature,-2.6,1406.9,1403.23,-0.24527
+83,cycle,operating age (cycles run),1.8,73.0,64.0,
+83,s7,HPC outlet pressure,-1.8,553.87,553.9,0.04467
+83,s13,corrected fan speed,1.8,2388.09,2388.06,0.00097
+83,s20,HPT coolant bleed,1.8,38.74,38.92,-0.00909
+83,s12,fuel flow to static pressure ratio,-0.7,521.67,521.87,0.00703
+83,s17,bleed enthalpy,-0.7,392.0,392.0,0.06061
+83,s21,LPT coolant bleed,-0.7,23.3021,23.3511,0.00256
+83,s8,physical fan speed,0.2,2388.06,2388.06,0.00079
+83,s2,LPC outlet temperature,0.1,642.81,642.41,0.01709
+83,s3,HPC outlet temperature,-0.0,1594.68,1587.43,0.55727
+83,s9,physical core speed,0.0,9058.7,9058.2,0.38103
+83,s14,corrected core speed,0.0,8141.38,8139.37,0.19824
+83,s15,bypass ratio,0.0,8.4309,8.4201,-0.00099
+84,cycle,operating age (cycles run),20.4,172.0,64.0,
+84,s20,HPT coolant bleed,-13.1,38.62,38.92,-0.004
+84,s4,LPT outlet temperature,-11.8,1412.73,1403.23,-0.67303
+84,s2,LPC outlet temperature,11.6,643.39,642.41,0.02145
+84,s15,bypass ratio,9.7,8.4791,8.4201,-0.00036
+84,s12,fuel flow to static pressure ratio,-8.5,520.88,521.87,-0.03673
+84,s8,physical fan speed,-7.6,2388.16,2388.06,-0.00309
+84,s7,HPC outlet pressure,5.8,552.47,553.9,-0.06994
+84,s3,HPC outlet temperature,-4.2,1588.7,1587.43,0.58139
+84,s17,bleed enthalpy,-3.9,395.0,392.0,0.07273
+84,s11,HPC outlet static pressure,3.1,47.6,47.37,-0.01176
+84,s21,LPT coolant bleed,2.9,23.2039,23.3511,0.00082
+84,s13,corrected fan speed,2.6,2388.22,2388.06,0.00733
+84,s9,physical core speed,1.1,9050.57,9058.2,0.22776
+84,s14,corrected core speed,0.5,8130.61,8139.37,-0.01073
+85,cycle,operating age (cycles run),-5.4,34.0,64.0,
+85,s4,LPT outlet temperature,-1.7,1413.22,1403.23,-0.24103
+85,s8,physical fan speed,-1.6,2388.07,2388.06,-0.00442
+85,s2,LPC outlet temperature,0.0,642.58,642.41,0.03448
+85,s3,HPC outlet temperature,0.0,1582.94,1587.43,-0.23042
+85,s7,HPC outlet pressure,0.0,553.55,553.9,0.02297
+85,s9,physical core speed,0.0,9045.23,9058.2,-0.0977
+85,s11,HPC outlet static pressure,0.0,47.73,47.37,0.02758
+85,s12,fuel flow to static pressure ratio,0.0,521.43,521.87,0.00727
+85,s13,corrected fan speed,0.0,2388.09,2388.06,0.00103
+85,s14,corrected core speed,0.0,8126.6,8139.37,-0.124
+85,s15,bypass ratio,0.0,8.4228,8.4201,0.00171
+85,s17,bleed enthalpy,0.0,393.0,392.0,-0.15152
+85,s20,HPT coolant bleed,0.0,38.84,38.92,-0.00273
+85,s21,LPT coolant bleed,0.0,23.3107,23.3511,-0.00914
+86,cycle,operating age (cycles run),22.9,110.0,64.0,
+86,s14,corrected core speed,11.9,8148.14,8139.37,0.18309
+86,s3,HPC outlet temperature,-9.4,1586.29,1587.43,0.0097
+86,s4,LPT outlet temperature,-8.9,1404.83,1403.23,0.30594
+86,s15,bypass ratio,3.8,8.45,8.4201,0.00265
+86,s11,HPC outlet static pressure,2.7,47.52,47.37,-0.01273
+86,s13,corrected fan speed,2.0,2388.13,2388.06,0.00812
+86,s2,LPC outlet temperature,1.6,643.07,642.41,0.04939
+86,s20,HPT coolant bleed,-1.6,38.94,38.92,0.0057
+86,s17,bleed enthalpy,-1.5,394.0,392.0,0.0
+86,s7,HPC outlet pressure,1.2,553.65,553.9,0.04388
+86,s21,LPT coolant bleed,-1.2,23.2484,23.3511,0.00059
+86,s8,physical fan speed,0.7,2388.05,2388.06,-0.00206
+86,s12,fuel flow to static pressure ratio,-0.6,521.52,521.87,0.00224
+86,s9,physical core speed,0.5,9074.53,9058.2,0.63624
+87,s20,HPT coolant bleed,-4.1,38.89,38.92,0.00727
+87,s15,bypass ratio,2.0,8.4313,8.4201,0.004
+87,s17,bleed enthalpy,-1.9,393.0,392.0,0.06061
+87,cycle,operating age (cycles run),-1.7,56.0,64.0,
+87,s9,physical core speed,1.7,9056.99,9058.2,0.18467
+87,s3,HPC outlet temperature,1.4,1584.33,1587.43,0.4257
+87,s11,HPC outlet static pressure,1.2,47.4,47.37,-0.00679
+87,s13,corrected fan speed,1.2,2388.02,2388.06,-0.00212
+87,s21,LPT coolant bleed,1.2,23.2605,23.3511,-0.00153
+87,s8,physical fan speed,-1.1,2388.04,2388.06,0.00121
+87,s14,corrected core speed,-1.0,8146.94,8139.37,0.28588
+87,s7,HPC outlet pressure,-0.8,554.39,553.9,0.00467
+87,s2,LPC outlet temperature,0.7,642.18,642.41,-0.01782
+87,s4,LPT outlet temperature,0.5,1391.48,1403.23,-0.35509
+87,s12,fuel flow to static pressure ratio,0.2,522.15,521.87,0.02697
+88,s9,physical core speed,-14.4,9046.75,9058.2,1.24006
+88,s8,physical fan speed,-11.2,2388.14,2388.06,0.00267
+88,s4,LPT outlet temperature,-8.6,1405.22,1403.23,-0.52885
+88,s15,bypass ratio,-7.0,8.4101,8.4201,-0.00153
+88,s20,HPT coolant bleed,-4.8,38.8,38.92,-0.00115
+88,s7,HPC outlet pressure,-1.9,553.68,553.9,0.06733
+88,s14,corrected core speed,-1.7,8127.79,8139.37,0.54218
+88,s12,fuel flow to static pressure ratio,-1.2,521.69,521.87,0.03491
+88,s3,HPC outlet temperature,-0.1,1593.67,1587.43,-0.39152
+88,cycle,operating age (cycles run),0.0,68.0,64.0,
+88,s2,LPC outlet temperature,0.0,642.91,642.41,0.05024
+88,s11,HPC outlet static pressure,0.0,47.39,47.37,0.00073
+88,s13,corrected fan speed,0.0,2388.18,2388.06,0.00079
+88,s17,bleed enthalpy,0.0,394.0,392.0,0.01818
+88,s21,LPT coolant bleed,0.0,23.4181,23.3511,0.01777
+89,cycle,operating age (cycles run),8.9,177.0,64.0,
+89,s2,LPC outlet temperature,8.5,642.91,642.41,0.0277
+89,s14,corrected core speed,7.5,8130.76,8139.37,0.25842
+89,s4,LPT outlet temperature,-5.8,1407.43,1403.23,0.05206
+89,s8,physical fan speed,-5.0,2388.08,2388.06,-0.00491
+89,s7,HPC outlet pressure,4.4,553.18,553.9,0.01218
+89,s3,HPC outlet temperature,-3.3,1588.94,1587.43,-0.43879
+89,s15,bypass ratio,-2.8,8.4575,8.4201,0.00026
+89,s11,HPC outlet static pressure,2.6,47.36,47.37,-0.01442
+89,s20,HPT coolant bleed,-2.4,38.82,38.92,0.00806
+89,s21,LPT coolant bleed,2.0,23.235,23.3511,-0.00536
+89,s9,physical core speed,-1.6,9057.58,9058.2,0.15739
+89,s12,fuel flow to static pressure ratio,0.9,521.47,521.87,-0.02673
+89,s17,bleed enthalpy,-0.9,395.0,392.0,0.21818
+89,s13,corrected fan speed,0.0,2388.12,2388.06,0.00273
+90,s3,HPC outlet temperature,14.9,1587.78,1587.43,-0.52303
+90,s11,HPC outlet static pressure,11.8,48.0,47.37,0.03958
+90,s2,LPC outlet temperature,10.7,643.45,642.41,0.04436
+90,s4,LPT outlet temperature,7.4,1418.85,1403.23,0.58794
+90,s15,bypass ratio,4.8,8.4686,8.4201,0.00151
+90,s9,physical core speed,4.5,9087.59,9058.2,1.66485
+90,s20,HPT coolant bleed,-4.5,38.6,38.92,-0.00685
+90,s21,LPT coolant bleed,3.7,23.1409,23.3511,-0.00619
+90,s7,HPC outlet pressure,3.5,552.31,553.9,-0.08055
+90,s8,physical fan speed,3.3,2388.19,2388.06,0.00448
+90,cycle,operating age (cycles run),3.2,146.0,64.0,
+90,s17,bleed enthalpy,-2.7,393.0,392.0,-0.12727
+90,s12,fuel flow to static pressure ratio,-1.2,521.32,521.87,-0.05097
+90,s13,corrected fan speed,-0.3,2388.09,2388.06,-0.00085
+90,s14,corrected core speed,0.2,8156.46,8139.37,0.64327
+91,s2,LPC outlet temperature,24.5,643.18,642.41,-0.00388
+91,s11,HPC outlet static pressure,18.4,48.01,47.37,0.01539
+91,s3,HPC outlet temperature,15.4,1605.05,1587.43,0.38788
+91,s4,LPT outlet temperature,13.0,1419.74,1403.23,-0.48176
+91,s15,bypass ratio,12.2,8.5104,8.4201,0.00079
+91,s20,HPT coolant bleed,-7.0,38.73,38.92,0.00855
+91,s7,HPC outlet pressure,4.3,552.22,553.9,-0.03588
+91,s21,LPT coolant bleed,4.3,23.2522,23.3511,-0.00107
+91,s13,corrected fan speed,4.0,2388.21,2388.06,-0.00061
+91,s14,corrected core speed,3.3,8123.71,8139.37,0.20733
+91,s12,fuel flow to static pressure ratio,2.3,520.96,521.87,0.00279
+91,s8,physical fan speed,-1.4,2388.2,2388.06,0.00097
+91,s9,physical core speed,1.4,9052.13,9058.2,-0.45673
+91,cycle,operating age (cycles run),-1.2,234.0,64.0,
+91,s17,bleed enthalpy,0.1,395.0,392.0,-0.01212
+92,s2,LPC outlet temperature,22.0,644.03,642.41,0.00697
+92,s11,HPC outlet static pressure,17.4,47.98,47.37,0.03352
+92,s3,HPC outlet temperature,16.9,1597.06,1587.43,0.44358
+92,s15,bypass ratio,13.3,8.4804,8.4201,-0.00303
+92,s17,bleed enthalpy,8.6,394.0,392.0,-0.05455
+92,s7,HPC outlet pressure,8.0,550.88,553.9,-0.1083
+92,s20,HPT coolant bleed,-7.6,38.53,38.92,-0.00176
+92,s13,corrected fan speed,7.5,2388.19,2388.06,0.0037
+92,s4,LPT outlet temperature,7.0,1414.07,1403.23,0.02958
+92,s21,LPT coolant bleed,5.9,23.1211,23.3511,-0.0085
+92,s8,physical fan speed,-4.6,2388.23,2388.06,0.00182
+92,cycle,operating age (cycles run),3.3,150.0,64.0,
+92,s14,corrected core speed,-2.2,8122.89,8139.37,-0.11933
+92,s9,physical core speed,0.9,9049.25,9058.2,0.0017
+92,s12,fuel flow to static pressure ratio,-0.9,520.17,521.87,-0.04667
+93,s3,HPC outlet temperature,13.4,1598.84,1587.43,0.19109
+93,s2,LPC outlet temperature,11.6,643.02,642.41,-0.00236
+93,s17,bleed enthalpy,-5.1,392.0,392.0,-0.04848
+93,s11,HPC outlet static pressure,5.0,47.67,47.37,-0.00921
+93,s15,bypass ratio,4.8,8.4826,8.4201,0.00138
+93,s7,HPC outlet pressure,4.6,552.86,553.9,0.01388
+93,s4,LPT outlet temperature,4.2,1416.19,1403.23,-0.05424
+93,s21,LPT coolant bleed,3.4,23.1944,23.3511,-0.00346
+93,cycle,operating age (cycles run),-2.5,244.0,64.0,
+93,s8,physical fan speed,-2.2,2388.15,2388.06,0.00018
+93,s13,corrected fan speed,-2.0,2388.14,2388.06,-0.00115
+93,s14,corrected core speed,1.1,8155.63,8139.37,0.20212
+93,s12,fuel flow to static pressure ratio,-1.0,520.66,521.87,0.00552
+93,s9,physical core speed,-0.8,9074.82,9058.2,0.07376
+93,s20,HPT coolant bleed,-0.8,38.7,38.92,-0.01206
+94,cycle,operating age (cycles run),20.5,133.0,64.0,
+94,s15,bypass ratio,10.8,8.5167,8.4201,0.00245
+94,s2,LPC outlet temperature,9.5,642.77,642.41,-0.03006
+94,s12,fuel flow to static pressure ratio,-8.2,520.62,521.87,-0.06915
+94,s11,HPC outlet static pressure,8.0,47.81,47.37,0.01715
+94,s13,corrected fan speed,-7.4,2388.13,2388.06,-0.00048
+94,s3,HPC outlet temperature,5.8,1589.5,1587.43,0.48679
+94,s8,physical fan speed,4.8,2388.17,2388.06,0.00345
+94,s17,bleed enthalpy,1.9,393.0,392.0,-0.12727
+94,s20,HPT coolant bleed,-1.9,38.63,38.92,-0.01927
+94,s21,LPT coolant bleed,1.4,23.2933,23.3511,0.00221
+94,s7,HPC outlet pressure,1.1,552.78,553.9,-0.00806
+94,s14,corrected core speed,1.1,8133.36,8139.37,-0.11606
+94,s4,LPT outlet temperature,-0.4,1420.94,1403.23,0.44285
+94,s9,physical core speed,0.3,9051.22,9058.2,0.23539
+95,cycle,operating age (cycles run),11.4,89.0,64.0,
+95,s7,HPC outlet pressure,7.4,553.47,553.9,-0.0417
+95,s9,physical core speed,-6.5,9052.14,9058.2,0.99103
+95,s15,bypass ratio,6.5,8.4294,8.4201,0.00273
+95,s2,LPC outlet temperature,5.0,641.97,642.41,0.01248
+95,s14,corrected core speed,2.3,8135.14,8139.37,0.21855
+95,s21,LPT coolant bleed,1.8,23.3458,23.3511,-0.00246
+95,s4,LPT outlet temperature,-1.5,1398.61,1403.23,-0.31267
+95,s11,HPC outlet static pressure,1.4,47.42,47.37,-0.00291
+95,s12,fuel flow to static pressure ratio,1.2,521.95,521.87,-0.04836
+95,s17,bleed enthalpy,1.2,394.0,392.0,0.20606
+95,s13,corrected fan speed,-0.9,2388.1,2388.06,-0.00388
+95,s3,HPC outlet temperature,0.4,1586.25,1587.43,-0.41642
+95,s8,physical fan speed,0.4,2388.08,2388.06,0.00964
+95,s20,HPT coolant bleed,0.0,38.94,38.92,0.01133
+96,s17,bleed enthalpy,-8.6,391.0,392.0,-0.05455
+96,s15,bypass ratio,-5.1,8.411,8.4201,0.00223
+96,cycle,operating age (cycles run),4.9,97.0,64.0,
+96,s9,physical core speed,-4.6,9062.41,9058.2,0.09491
+96,s20,HPT coolant bleed,-3.2,38.96,38.92,0.00885
+96,s8,physical fan speed,-3.0,2388.03,2388.06,-0.00182
+96,s21,LPT coolant bleed,-2.3,23.4606,23.3511,-0.00275
+96,s7,HPC outlet pressure,-1.8,553.99,553.9,0.05648
+96,s12,fuel flow to static pressure ratio,-1.4,522.3,521.87,0.0357
+96,s11,HPC outlet static pressure,1.0,47.14,47.37,-0.01067
+96,s13,corrected fan speed,1.0,2388.01,2388.06,0.00309
+96,s3,HPC outlet temperature,0.7,1590.88,1587.43,0.76139
+96,s14,corrected core speed,0.6,8148.24,8139.37,0.05297
+96,s4,LPT outlet temperature,-0.5,1397.94,1403.23,0.00727
+96,s2,LPC outlet temperature,-0.1,642.3,642.41,-0.01455
+97,cycle,operating age (cycles run),10.2,134.0,64.0,
+97,s14,corrected core speed,9.7,8155.48,8139.37,0.49848
+97,s15,bypass ratio,5.0,8.45,8.4201,0.0004
+97,s11,HPC outlet static pressure,4.6,47.38,47.37,-0.00339
+97,s9,physical core speed,4.4,9076.36,9058.2,0.6103
+97,s17,bleed enthalpy,-3.9,395.0,392.0,0.09697
+97,s7,HPC outlet pressure,-1.2,554.05,553.9,-0.01594
+97,s12,fuel flow to static pressure ratio,-1.0,521.58,521.87,-0.00812
+97,s13,corrected fan speed,0.9,2388.06,2388.06,0.0003
+97,s2,LPC outlet temperature,0.6,642.59,642.41,0.01982
+97,s3,HPC outlet temperature,0.5,1582.96,1587.43,-0.58515
+97,s8,physical fan speed,-0.5,2388.06,2388.06,-6e-05
+97,s20,HPT coolant bleed,0.2,38.61,38.92,-0.02648
+97,s4,LPT outlet temperature,-0.1,1410.92,1403.23,0.37103
+97,s21,LPT coolant bleed,-0.1,23.2953,23.3511,-0.00476
+98,cycle,operating age (cycles run),39.0,121.0,64.0,
+98,s15,bypass ratio,13.1,8.4235,8.4201,-0.00241
+98,s11,HPC outlet static pressure,9.3,47.66,47.37,0.01018
+98,s4,LPT outlet temperature,-9.1,1415.47,1403.23,0.122
+98,s2,LPC outlet temperature,8.6,642.68,642.41,0.02176
+98,s14,corrected core speed,3.7,8146.39,8139.37,0.5057
+98,s21,LPT coolant bleed,-2.7,23.3608,23.3511,-0.00106
+98,s17,bleed enthalpy,2.4,394.0,392.0,0.15152
+98,s20,HPT coolant bleed,-1.1,38.76,38.92,-0.00479
+98,s9,physical core speed,0.6,9062.34,9058.2,0.00236
+98,s13,corrected fan speed,-0.6,2388.09,2388.06,0.00158
+98,s3,HPC outlet temperature,0.4,1599.51,1587.43,0.83
+98,s12,fuel flow to static pressure ratio,0.4,521.53,521.87,0.01897
+98,s8,physical fan speed,0.3,2388.13,2388.06,-0.00097
+98,s7,HPC outlet pressure,0.2,553.44,553.9,-0.02036
+99,s17,bleed enthalpy,-10.3,391.0,392.0,-0.15758
+99,s7,HPC outlet pressure,-4.2,554.75,553.9,0.01648
+99,s20,HPT coolant bleed,-4.0,38.95,38.92,-0.00727
+99,s11,HPC outlet static pressure,-3.6,47.26,47.37,0.00855
+99,cycle,operating age (cycles run),3.5,97.0,64.0,
+99,s15,bypass ratio,-2.4,8.4003,8.4201,7e-05
+99,s21,LPT coolant bleed,-2.4,23.3595,23.3511,-0.00889
+99,s4,LPT outlet temperature,-2.3,1397.98,1403.23,0.00636
+99,s9,physical core speed,-1.8,9067.16,9058.2,0.00648
+99,s8,physical fan speed,-1.6,2388.01,2388.06,0.00036
+99,s14,corrected core speed,0.9,8150.38,8139.37,0.19442
+99,s2,LPC outlet temperature,-0.4,642.0,642.41,0.02364
+99,s12,fuel flow to static pressure ratio,-0.4,521.82,521.87,-0.06024
+99,s13,corrected fan speed,-0.2,2388.02,2388.06,0.00321
+99,s3,HPC outlet temperature,-0.1,1585.03,1587.43,-0.17655
+100,s14,corrected core speed,15.0,8214.64,8139.37,1.26636
+100,s3,HPC outlet temperature,9.4,1601.62,1587.43,0.42533
+100,s15,bypass ratio,8.4,8.4903,8.4201,0.00225
+100,cycle,operating age (cycles run),7.5,198.0,64.0,
+100,s2,LPC outlet temperature,7.4,642.95,642.41,0.0143
+100,s4,LPT outlet temperature,7.0,1424.99,1403.23,0.18158
+100,s9,physical core speed,6.7,9155.03,9058.2,1.81024
+100,s20,HPT coolant bleed,3.1,38.7,38.92,-0.01564
+100,s11,HPC outlet static pressure,2.4,47.8,47.37,0.01873
+100,s13,corrected fan speed,1.9,2388.05,2388.06,-0.00261
+100,s7,HPC outlet pressure,-1.8,552.48,553.9,-0.07345
+100,s21,LPT coolant bleed,1.8,23.1855,23.3511,-0.01104
+100,s17,bleed enthalpy,0.8,396.0,392.0,0.12727
+100,s8,physical fan speed,0.2,2388.06,2388.06,0.00109
+100,s12,fuel flow to static pressure ratio,-0.2,521.07,521.87,-0.00964

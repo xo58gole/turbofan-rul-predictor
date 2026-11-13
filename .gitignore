@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# Rebuilt by the run script
+data/raw/*.txt
+models/*.joblib
+mlflow.db
+mlruns/
+mlartifacts/
